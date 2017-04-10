@@ -3,19 +3,19 @@ const Schema = mongoose.Schema;
 // Define the schema for users
 const userSchema = new Schema({
 
-	// firstName entre 2 et 20 caractères
-	firstName: {
-		type: String, // Type validation 
-		minlength: [ 2, 'firstName is too short' ], // Minimum length
-		maxlength: [ 20, 'firstName is too long' ] // Maximum length
+	email: {
+		type: String, // Type validation
+		required: true,
+		unique: 'L\'adresse email est requise',
+		lowercase: 'L\'adresse email ne peut pas contenir de caratère majuscule',
+		minlength: [ 5, 'L\'adresse email est trop courte' ], // Minimum length
+		maxlength: [ 60, 'L\'email est trop longue' ], // Maximum length
+		match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'L\'adresse email n\'est pas valide']
 	},
 
-	// lastName entre 2 et 20 caractères
-	lastName: {
-		type: String, // Type validation 
-		minlength: [ 2, 'minlength is too short' ], // Minimum length
-		maxlength: [ 20, 'minlength is too long' ] // Maximum length
-	},
+	scoreId: {
+		type: Number,
+	}, 
 	
 	// date de la création de l'utilisateur
 	createdAt: {

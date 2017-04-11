@@ -1,11 +1,13 @@
 Installation :
 
-cd [le dossier du projet sur votre ordinateur]
+  cd [un dossier sur votre ordinateur dans lequel viendra le dossier du projet]
 
-git clone git@github.com:ghiringh/transmedia.git
+  git clone git@github.com:ghiringh/transmedia.git
 
-npm install
+  cd transmedia
 
-mongod (dans un autre terminal)
+  npm install
 
-npm run dev
+  mongod (dans un autre terminal)
+
+  npm run dev

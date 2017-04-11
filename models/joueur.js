@@ -1,8 +1,8 @@
 var validator = require('validator');
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-// Define the schema for users
-const userSchema = new Schema({
+// Define the schema for joueurs
+const joueurSchema = new Schema({
 
 	email: {
 		type: String, // Type validation
@@ -27,4 +27,4 @@ const userSchema = new Schema({
 });
 
 // Create the model from the schema and export it
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('Joueur', joueurSchema);

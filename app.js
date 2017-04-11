@@ -11,6 +11,8 @@ mongoose.connect('mongodb://localhost/transmedia');
 var index = require('./routes/index');
 var joueurs = require('./routes/joueurs');
 var staffs = require('./routes/staffs');
+var scores = require('./routes/scores');
+var evenements = require('./routes/evenements');
 
 var app = express();
 
@@ -29,6 +31,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/joueurs', joueurs);
 app.use('/staffs', staffs);
+app.use('/scores', scores);
+app.use('/evenements', evenements);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

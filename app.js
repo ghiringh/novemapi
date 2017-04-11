@@ -10,6 +10,7 @@ mongoose.connect('mongodb://localhost/transmedia');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var babel = require("babel-core");
 
 var app = express();
 
@@ -24,6 +25,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+//User bower_components
+app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
 app.use('/', index);
 app.use('/users', users);

@@ -10,6 +10,7 @@ mongoose.connect('mongodb://localhost/transmedia');
 
 var index = require('./routes/index');
 var joueurs = require('./routes/joueurs');
+var staffs = require('./routes/staffs');
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/joueurs', joueurs);
+app.use('/staffs', staffs);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

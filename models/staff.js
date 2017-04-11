@@ -1,17 +1,8 @@
 var validator = require('validator');
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-// Define the schema for joueurs
-const joueurSchema = new Schema({
-
-
-
-	pseudo: {
-		type: String,
-		required: true,
-		minlength: [ 2, 'Le pseudo est trop court' ],
-		maxlength: [ 20, 'Le pseudo est trop long' ]
-	},
+// Define the schema for staffs
+const staffSchema = new Schema({
 
 	prenom: {
 		type: String,
@@ -34,12 +25,8 @@ const joueurSchema = new Schema({
 		validate: [ validator.isEmail, 'L\'adresse email n\'est pas valide' ]
 	},
 
-	score_id: {
-		type: Number,
-	}, 
-	
-	event_id: {
-		type: Number,
+	password: {
+		type: String,
 	},
 
 	date_creation: {
@@ -49,4 +36,4 @@ const joueurSchema = new Schema({
 	
 });
 
-module.exports = mongoose.model('Joueur', joueurSchema);
+module.exports = mongoose.model('staff', staffSchema);

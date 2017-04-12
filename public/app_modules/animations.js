@@ -1,3 +1,33 @@
+
+$(function(){    
+    $(".button").on("click", function(){
+        $(".button").rotate({
+            angle: 0,
+            animateTo:360,
+            duration:3000
+        });
+        setTimeout(function(){ 
+            $(".button").animate({
+                right: '-51%'
+            },3000)
+            $(".left").animate({
+            left: '-51%'
+            },3000)
+            $(".right").animate({
+                right: '-51%'
+            },3000)
+            setTimeout(function(){ 
+                $(".button").fadeOut("fast")
+            },2000);
+        },2800);
+        setTimeout(function(){
+            $(".intro").fadeIn("slow");
+        },4000);
+    });
+
+});
+
+/*
 const COLORS = {
     RED:      '#FD5061',
     YELLOW:   '#FFCEA5',
@@ -78,3 +108,5 @@ const timeline = new mojs.Timeline;
 timeline.add( showBase, circle, showUp, addButtonCross );
 
 timeline.play();
+
+*/

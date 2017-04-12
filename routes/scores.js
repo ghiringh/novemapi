@@ -76,7 +76,7 @@ router.delete('/:id', loadScore, function(req, res, next) {
 });
 
 function loadScore(req, res, next) {
-	Joueur.findOne({"_id" : req.params.id}).exec(function(err, score) {
+	Score.findOne({"_id" : req.params.id}).exec(function(err, score) {
 		if (err) {
 			return next(err);
 		} else if (!score) {

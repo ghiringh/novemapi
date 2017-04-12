@@ -8,13 +8,13 @@ $(function(){
         });
         setTimeout(function(){ 
             $(".button").animate({
-                right: '-51%'
+                right: '-54%'
             },3000)
             $(".left").animate({
-            left: '-51%'
+            left: '-54%'
             },3000)
             $(".right").animate({
-                right: '-51%'
+                right: '-54%'
             },3000)
             setTimeout(function(){ 
                 $(".button").fadeOut("fast")
@@ -22,7 +22,7 @@ $(function(){
         },2800);
         setTimeout(function(){
             $(".intro").fadeIn("slow");
-        },4000);
+        },5000);
     });
 
 });

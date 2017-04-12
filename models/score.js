@@ -8,32 +8,32 @@ const ObjectId = mongoose.Types.ObjectId;
 const scoreSchema = new Schema({
 
 	business:{
-		type: int, 
+		type: Number, 
 		required: false,
 		default: 0
 	},
 	management:{
-		type: int, 
+		type: Number, 
 		required: false,
 		default: 0
 	},
 	marketing:{
-		type: int, 
+		type: Number, 
 		required: false,
 		default: 0
 	},
 	coding:{
-		type: int, 
+		type: Number, 
 		required: false,
 		default: 0
 	},
 	multimedia:{
-		type: int, 
+		type: Number, 
 		required: false,
 		default: 0
 	},
 	communication:{
-		type: int, 
+		type: Number, 
 		required: false,
 		default: 0
 	},
@@ -42,10 +42,10 @@ const scoreSchema = new Schema({
 		required: true,
 		ref: 'Joueur',
 		validate: existingJoueur
-	}
+	},
 
 	// date de la création du score
-	createdAt: {
+	date_creation: {
 		type: Date,
 		default: Date.now
 	}
@@ -65,4 +65,4 @@ function existingJoueur(value, callback) {
 }
 
 // Create the model from the schema and export it
-module.exports = mongoose.model('Score, scoreSchema);
+module.exports = mongoose.model('Score', scoreSchema);

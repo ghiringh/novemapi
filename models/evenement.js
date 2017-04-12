@@ -29,10 +29,12 @@ const evenementSchema = new Schema({
 		type: Date,
 		default: Date.now
 	},
-	details: [{ objectif: String, 
-					description: String, 
-					public: String, 
-					remarque: String]
+	details: [{ 
+		objectif: String, 
+		description: String, 
+		public: String, 
+		remarque: String
+	}]
 	
 });
 /**
@@ -49,4 +51,4 @@ function existingStaff(value, callback) {
 }
 
 // Create the model from the schema and export it
-module.exports = mongoose.model('Evenement, evenementSchema);
+module.exports = mongoose.model('Evenement', evenementSchema);

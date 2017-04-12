@@ -30,12 +30,12 @@ router.post('/', function(req, res, next) {
 	}
 	// Send the saved document in the response
 	res.status(201);
-	res.send(savedEvenement;
+	res.send(savedEvenement);
 	});
 });
 
 /* PATCH update evenement */
-router.patch('/:id', loadScore, function(req, res, next) {
+router.patch('/:id', loadEvenement, function(req, res, next) {
 
 	if (req.body.nom !== undefined) {
 		req.evenement.nom = req.body.nom;

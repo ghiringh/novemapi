@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const Score = require('../models/score');
-const ObjectId = mongoose.Types.ObjectId;
+
 /* GET score  */
 router.get('/', function(req, res, next) {
 Score.find().sort('id').exec(function(err, scores) {

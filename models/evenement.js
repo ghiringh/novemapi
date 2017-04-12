@@ -28,7 +28,6 @@ const evenementSchema = new Schema({
 	// date de la création de l'évènement
 	date_creation: {
 		type: Date,
-		required: true,
 		default: Date.now
 	},
 	details: [{ 

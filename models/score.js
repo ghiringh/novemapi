@@ -36,7 +36,7 @@ const scoreSchema = new Schema({
 		required: false,
 		default: 0
 	},
-	joueur:{
+	joueur_id:{
 		type: Schema.Types.ObjectId,
 		required: true,
 		ref: 'Joueur',
@@ -46,7 +46,6 @@ const scoreSchema = new Schema({
 	// date de la création du score
 	date_creation: {
 		type: Date,
-		required: true,
 		default: Date.now
 	}
 	

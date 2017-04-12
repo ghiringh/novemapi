@@ -35,7 +35,6 @@ const staffSchema = new Schema({
 
 	date_creation: {
 		type: Date,
-		required: true,
 		default: Date.now
 	}
 	

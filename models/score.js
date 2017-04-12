@@ -53,13 +53,12 @@ const scoreSchema = new Schema({
 /**
  * fonction qui valide si le joueur existe, via son id
  */
-function existingJoueur(value, callback) {
+function existingJoueur(value) {
 	Joueur.findOne({ '_id': value }, function (err, joueur){
-		if (joueur){
-			callback(true);
-		} else {
-			callback(false);
+		if (err){
+			return next(err);
 		}
+		return joueur;
 	});
 }
 

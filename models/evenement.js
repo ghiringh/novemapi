@@ -68,12 +68,13 @@ function dateFin(value) {
 /**
  * fonction qui valide si le staff existe, via son id
  */
-function existingStaff(value) {
+function existingStaff(value, callback) {
 	Staff.findOne({ '_id': value }, function (err, staff){
-		if (err){
-			return next(err);
+		if (staff){
+			callback(true);
+		} else {
+			callback(false);
 		}
-		return staff;
 	});
 }
 

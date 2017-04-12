@@ -39,6 +39,7 @@ const scoreSchema = new Schema({
 	joueur_id:{
 		type: Schema.Types.ObjectId,
 		required: true,
+		unique: 'Ce joueur possède déjà un score',
 		ref: 'Joueur',
 		validate: existingJoueur
 	},
@@ -50,15 +51,17 @@ const scoreSchema = new Schema({
 	}
 	
 });
+
 /**
  * fonction qui valide si le joueur existe, via son id
  */
-function existingJoueur(value) {
+function existingJoueur(value, callback) {
 	Joueur.findOne({ '_id': value }, function (err, joueur){
-		if (err){
-			return next(err);
+		if (joueur){
+			callback(true);
+		} else {
+			callback(false);
 		}
-		return joueur;
 	});
 }
 

@@ -19,10 +19,12 @@ const evenementSchema = new Schema({
 	date_debut:{
 		type: Date,
 		required: true,
+		validate: dateDebut
 	},
 	date_fin:{
 		type: Date,
 		required: true,
+		validate: dateFin
 	},
 
 	// date de la création de l'évènement
@@ -30,25 +32,49 @@ const evenementSchema = new Schema({
 		type: Date,
 		default: Date.now
 	},
-	details: [{ 
-		objectif: String, 
-		description: String, 
-		public: String, 
-		remarque: String
-	}]
+	details: { 
+		objectifs: {
+			type: String,
+			required: false,
+			maxlength:[ 200, 'Les objectifs sont trop longs' ]
+		},
+		description: {
+			type: String,
+			required: false,
+			maxlength:[ 1000, 'La description est trop longue' ]
+		}, 
+		public: {
+			type: String,
+			required: false,
+			maxlength:[ 200, 'Le public est trop long' ]
+		}, 
+		remarques: {
+			type: String,
+			required: false,
+			maxlength:[ 1000, 'Les remarques sont trop longues' ]
+		}
+	}
 	
 });
+
+function dateDebut(value) {
+	return value >= Date.now();
+}
+
+function dateFin(value) {
+	return value > this.date_debut;
+}
+
 /**
  * fonction qui valide si le staff existe, via son id
  */
-function existingStaff(value, callback) {
-  Joueur.findOne({ '_id': value }, function (err, staff){
-    if (staff){
-      callback(true);
-    } else {
-      callback(false);
-    }
-  });
+function existingStaff(value) {
+	Staff.findOne({ '_id': value }, function (err, staff){
+		if (err){
+			return next(err);
+		}
+		return staff;
+	});
 }
 
 // Create the model from the schema and export it

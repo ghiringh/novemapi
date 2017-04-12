@@ -1,10 +1,10 @@
 var validator = require('validator');
 const mongoose = require('mongoose');
+const Score = require('../models/score');
+const Evenement = require('../models/evenement');
 const Schema = mongoose.Schema;
 
 const joueurSchema = new Schema({
-
-
 
 	pseudo: {
 		type: String,
@@ -42,7 +42,7 @@ const joueurSchema = new Schema({
 		required: false,
 		ref: 'Score',
 		validate: existingScore
-	}, 
+	},
 	
 	evenement_id: {
 		type: Schema.Types.ObjectId,
@@ -61,26 +61,24 @@ const joueurSchema = new Schema({
 /**
  * fonction qui valide si le score existe, via son id
  */
-function existingScore(value, callback) {
-	Score.findOne({ '_id': value }, function (err, joueur){
-		if (joueur){
-			callback(true);
-		} else {
-			callback(false);
+function existingScore(value) {
+	Score.findOne({ '_id': value }, function (err, score){
+		if (err){
+			return next(err);
 		}
+		return score;
 	});
 }
 
 /**
  * fonction qui valide si l'évenement existe, via son id
  */
-function existingEvenement(value, callback) {
-	Evenement.findOne({ '_id': value }, function (err, joueur){
-		if (joueur){
-			callback(true);
-		} else {
-			callback(false);
+function existingEvenement(value) {
+	Evenement.findOne({ '_id': value }, function (err, evenement){
+		if (err){
+			return next(err);
 		}
+		return evenement;
 	});
 }
 

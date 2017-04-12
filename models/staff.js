@@ -6,18 +6,21 @@ const staffSchema = new Schema({
 
 	prenom: {
 		type: String,
+		required: true,
 		minlength: [ 2, 'Le prenom est trop court' ],
 		maxlength: [ 20, 'Le prenom est trop long' ]
 	},
 
 	nom: {
 		type: String,
+		required: true,
 		minlength: [ 2, 'Le nom est trop court' ],
 		maxlength: [ 20, 'Le nom est trop long' ]
 	},
 
 	email: {
 		type: String,
+		required: true,
 		unique: 'L\'adresse email est requise',
 		lowercase: 'L\'adresse email ne peut pas contenir de caratère majuscule',
 		minlength: [ 5, 'L\'adresse email est trop courte' ],
@@ -27,10 +30,12 @@ const staffSchema = new Schema({
 
 	password: {
 		type: String,
+		required: true,
 	},
 
 	date_creation: {
 		type: Date,
+		required: true,
 		default: Date.now
 	}
 	

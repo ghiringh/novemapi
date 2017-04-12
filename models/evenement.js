@@ -2,16 +2,15 @@ var validator = require('validator');
 const mongoose = require('mongoose');
 const Staff = require('../models/staff');
 const Schema = mongoose.Schema;
-const ObjectId = mongoose.Types.ObjectId;
 
 // Define the schema for scores
 const evenementSchema = new Schema({
 	nom:{
 		type: String, 
-		required: false,
-		maxlength:[ 20, 'Name too long' ]
+		required: true,
+		maxlength:[ 40, 'Le nom de l\'événement est trop long' ]
 	},
-	staff:{
+	staff_id:{
 		type: Schema.Types.ObjectId,
 		required: true,
 		ref: 'Staff',
@@ -19,14 +18,17 @@ const evenementSchema = new Schema({
 	},
 	date_debut:{
 		type: Date,
+		required: true,
 	},
 	date_fin:{
 		type: Date,
+		required: true,
 	},
 
 	// date de la création de l'évènement
-	createdAt: {
+	date_creation: {
 		type: Date,
+		required: true,
 		default: Date.now
 	},
 	details: [{ 

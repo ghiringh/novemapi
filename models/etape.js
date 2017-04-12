@@ -16,7 +16,7 @@ const etapeSchema = new Schema({
 		required: true,
 		minlength: [ 2, 'La proposition est trop courte' ],
 		maxlength: [ 1000, 'La proposition est trop longue' ]
-	]},
+	}],
 	
 	date_creation: {
 		type: Date,
@@ -26,4 +26,4 @@ const etapeSchema = new Schema({
 	
 });
 
-module.exports = mongoose.model('Joueur', joueurSchema);
+module.exports = mongoose.model('Etape', etapeSchema);

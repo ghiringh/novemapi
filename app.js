@@ -10,12 +10,14 @@ mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/transmedia');
 
 var index = require('./routes/index');
+
 var joueurs = require('./routes/joueurs');
 var staffs = require('./routes/staffs');
 var scores = require('./routes/scores');
 var evenements = require('./routes/evenements');
 var etapes = require('./routes/etapes');
 var datas = require('./routes/datas');
+var babel = require("babel-core");
 
 var app = express();
 
@@ -30,6 +32,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+//User bower_components
+app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
 app.use('/', index);
 app.use('/joueurs', joueurs);

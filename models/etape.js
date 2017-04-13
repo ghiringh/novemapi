@@ -10,13 +10,21 @@ const etapeSchema = new Schema({
 		minlength: [ 2, 'La question est trop courte' ],
 		maxlength: [ 1000, 'Le pseudo est trop long' ]
 	},
+	/*propositions: {
+		required : true,
+		data: [
+			{
+				type:String
+			}
+		]
+	}*/
 
-	propositions: [{
-		type: String,
+	propositions: {
+		type: Array,
 		required: true,
 		minlength: [ 2, 'La proposition est trop courte' ],
 		maxlength: [ 1000, 'La proposition est trop longue' ]
-	}],
+	},
 	
 	date_creation: {
 		type: Date,

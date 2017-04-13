@@ -15,6 +15,7 @@ var staffs = require('./routes/staffs');
 var scores = require('./routes/scores');
 var evenements = require('./routes/evenements');
 var etapes = require('./routes/etapes');
+var datas = require('./routes/datas');
 
 var app = express();
 
@@ -36,6 +37,7 @@ app.use('/staffs', staffs);
 app.use('/scores', scores);
 app.use('/evenements', evenements);
 app.use('/etapes', etapes);
+app.use('/datas', datas);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

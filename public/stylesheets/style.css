@@ -61,25 +61,25 @@ a {
 }
 
 .intro{
-  font-family: rockwell;
-  font-size: 30px;
+  font-family: "Brasilia-Short II","Helvetica Neue",Helvetica,Arial,sans-serif;
   width:90%;
-  color:darkblue;
   position:absolute;
   display:none;
   text-align: center;
 }
 
 .intro p {
+  font-size: 50px;
+  color:darkblue;
   text-align: center;
 }
 
 .intro input {
-  font-size: 45px;
+  font-size: 30px;
   color:cornflowerblue;
-  font-family: rockwell;
-  border:1px solid #F5C5C5;
-  border-radius:5px;
+  border:1px solid #1f6582;
+  border-radius:2px;
+  padding:5px 5px 5px 5px;
 }
 
 .intro input[type="text"]:focus, input[type="password"]:focus, textarea:focus{
@@ -100,5 +100,32 @@ a {
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    lightgrey;
 }
+
+.bouton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.startButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #1f6582;
+}
+
+.startButton:hover {
+    background-color: #1f6582;
+    color: white;
+}
+
 
 

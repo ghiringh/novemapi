@@ -2,7 +2,6 @@ const meteors = new mojs.Burst({
     left: 0, top: 0,
     count:    5,
     radius:   { 0: 250 },
-
     children: {
         shape:        'line',
         stroke:       ['#92b5f9', '#b7e1fc', '#c7daff','#cefef2','#b7e1fc'],
@@ -16,7 +15,6 @@ const meteors = new mojs.Burst({
 
 
 $(function(){
-
     $(".button").on("click", function(e){
 
         meteors

@@ -1,17 +1,15 @@
+//
+   Created by Romain on 13.04.2017.
+
 extends layout
 
-block content
-  .main
-    .left
-    .right
-    .button
-      .loader-ring
-        .loader-ring-light
-        .loader-ring-track
-    .intro
-      p Bienvenue au NovemLab !
-        p
-          input(type='text', placeholder='Prénom')
-        button.bouton.startButton Commencer les épreuves
-
-
+block intro
+    include intro.jade
+block niveau1
+    include niveau1.jade
+block niveau2
+    include niveau2.jade
+block niveau3
+    include niveau3.jade
+block niveau4
+    include niveau4.jade

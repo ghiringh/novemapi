@@ -1,4 +1,6 @@
 var express = require('express');
+var seeder = require('mongoose-seeder'),
+	data = require('../data.json');
 
 const Etape = require('../models/etape');
 const Evenement = require('../models/evenement');
@@ -35,7 +37,15 @@ router.delete('/', function(req, res, next) {
 		}
 		res.sendStatus(204);
 	});
-	
+});
+
+router.post('/',function(req, res, next) {
+ 
+	seeder.seed(data).then(function(dbData) {
+		res.sendStatus(204);
+	}).catch(function(err) {
+		return next(err);
+	});
 });
 
 module.exports = router;

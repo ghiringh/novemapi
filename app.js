@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/transmedia');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/transmedia');
 
 var index = require('./routes/index');
 

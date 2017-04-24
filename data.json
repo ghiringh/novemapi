@@ -121,15 +121,15 @@
 	"etapes": {
 		"_model": "Etape",
 		"etape1": {
-			"question": ", te voici dans la salle des équipements. A toi de choisir 3 outils parmi la sélection proposée qui pourront, potentiellement, t’être utiles durant les diverses étapes de cette aventure.",
+			"question": ", Vous voilà dans la salle des équipements. A vous de choisir 3 outils parmi la sélection proposée qui pourront, potentiellement, t’être utiles durant les diverses étapes de cette aventure.",
 			"propositions": ["Ordinateur","Caméra","Plan marketing","Calculatrice","Debugger","Imprimante","Ecran pub","Assistant administratif","ERP"]
 		},
 		"etape2": {
-			"question": "A ton avis, quel bout de code permet d’afficher le message suivant : “BRAVO, vous êtes admis au NovemLab”",
+			"question": "A votre avis, quel bout de code permet d’afficher le message suivant : “BRAVO, vous êtes admis au NovemLab”",
 			"propositions": ["if (etapesReussies =! 4) {console.log(“BRAVO, vous êtes admis au NovemLab”)}","if (etapesReussies >3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "if (etapesReussies < 3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}"]
 		},
 		"etape3": {
-			"question": "Maintenant tu vas visionner une vidéo, le principe est simple… à la fin de cette séquence il faut choisir le bon type de plan",
+			"question": "Maintenant vous allez visionner une vidéo, le principe est simple… à la fin de cette séquence il faut choisir le bon type de plan",
 			"propositions": ["Plan américain","Gros plan", "Plan moyen"]
 		},
 		"etape4": {
@@ -137,15 +137,15 @@
 			"propositions":["Une fonction exponentielle","Une fonction  logarithmique","Une fonction second degré"]
 		},
 		"etape5": {
-			"question": "Comme première décision, tu dois classer par ordre d’importance les tâches suivantes",
+			"question": "Comme première décision, vous devez classer par ordre d’importance les tâches suivantes",
 			"propositions": ["Gestion de projet","Design et maquetting","Étude de marché","Développement","Phase de tests","Promotion"]
 		},
 		"etape6": {
-			"question": "Pour promouvoir au mieux notre projet, nous avons la possibilité de choisir 2 canaux de publicité parmi  ces 5 possibilités. Fais ton choix et classe-les selon le degré d’impact.",
+			"question": "Pour promouvoir au mieux notre projet, nous avons la possibilité de choisir 2 canaux de publicité parmi  ces 5 possibilités. Faites votre choix et classez-les selon le degré d’impact.",
 			"propositions": ["Flyers","Site web","Street marketing","Réseaux sociaux"]
 		},
 		"etape7": {
-			"question": "Pour promouvoir au mieux notre projet, nous avons la possibilité de choisir 2 canaux de publicité parmi  ces 5 possibilités. Fais ton choix et classe-les selon le degré d’impact.",
+			"question": "Pour promouvoir au mieux notre projet, nous avons la possibilité de choisir 2 canaux de publicité parmi  ces 5 possibilités. Faites votre choix et classez-les selon le degré d’impact.",
 			"propositions": ["R&D","Update","Renforcement des éléments graphiques de l’application","Agrandir les ressources","Investir dans d’autres produits","Promotion en continu"]
 		}
 	},

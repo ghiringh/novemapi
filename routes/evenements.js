@@ -4,7 +4,7 @@ const Evenement = require('../models/evenement');
 
 /* GET liste evenement  */
 router.get('/', function(req, res, next) {
-Evenement.find().sort('id').exec(function(err, evenements) {
+Evenement.find().sort('date_debut').exec(function(err, evenements) {
 	if (err) {
 		return next(err);
 	}
@@ -18,11 +18,12 @@ router.get('/:id', loadEvenement, function(req, res, next) {
 });
 
 /* POST new evenement */
-router.post('/', function(req, res, next) {
+router.post('/', checkPlageLibre,function(req, res, next) {
 	// Create a new document from the JSON in the request body
 	const newEvenement = new Evenement(req.body);
 
 	newEvenement.date_creation = Date.now();
+
 	// Save that document
 	newEvenement.save(function(err, savedEvenement) {
 	if (err) {
@@ -78,6 +79,21 @@ function loadEvenement(req, res, next) {
 			return next(err);
 		} else if (!evenement) {
 			return res.status(404).send('Aucun evenement trouvé avec cet identifiant : ' + req.params.id);
+		}
+		req.evenement = evenement;
+		next();
+	});
+}
+
+function checkPlageLibre(req, res, next){
+	Evenement.findOne({$or:[
+		{"date_debut": {$lte: req.body.date_debut}, "date_fin": {$gt: req.body.date_debut}},
+		{"date_debut": {$lt: req.body.date_fin}, "date_fin": {$gte: req.body.date_fin}},
+		{"date_debut": {$gte: req.body.date_debut}, "date_fin": {$lte: req.body.date_fin}}]}).exec(function(err, evenement) {
+		if (err) {
+			return next(err);
+		} else if (evenement) {
+			return res.status(404).send('La plage n\'est pas libre et contient déjà un autre événement');
 		}
 		req.evenement = evenement;
 		next();

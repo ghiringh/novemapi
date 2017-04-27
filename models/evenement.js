@@ -9,13 +9,13 @@ const evenementSchema = new Schema({
 		type: String, 
 		required: true,
 		maxlength:[ 40, 'Le nom de l\'événement est trop long' ]
-	},
+	},/*
 	staff_id:{
 		type: Schema.Types.ObjectId,
 		required: true,
 		ref: 'Staff',
 		validate: existingStaff
-	},
+	},*/
 	date_debut:{
 		type: Date,
 		required: true,

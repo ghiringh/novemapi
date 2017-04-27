@@ -121,32 +121,39 @@
 	"etapes": {
 		"_model": "Etape",
 		"etape1": {
+			"niveau":1,
 			"question": ", Vous voilà dans la salle des équipements. A vous de choisir 3 outils parmi la sélection proposée qui pourront, potentiellement, t’être utiles durant les diverses étapes de cette aventure.",
-			"propositions": ["Ordinateur","Caméra","Plan marketing","Calculatrice","Debugger","Imprimante","Ecran pub","Assistant administratif","ERP"]
+			"propositions": [{"reponse" : "Ordinateur", "score" : [0,2,0,0,0,2]}, {"reponse" : "Caméra", "score" : [0,0,0,0,0,4]}, {"reponse" : "Plan marketing", "score" : [0,0,0,0,4,0]}, {"reponse" : "Calculatrice", "score" : [4,0,0,0,0,0]}, {"reponse" : "Debugger", "score" : [0,4,0,0,0,0]},{"reponse" : "Imprimante", "score" : [0,0,0,0,0,4]}, {"reponse" : "Ecran pub", "score" : [0,0,1,0,3,0]}, {"reponse" : "Assistant administratif", "score" : [2,0,0,2,0,0]}, {"reponse" : "ERP", "score" : [0,0,0,4,0,0]}]
 		},
 		"etape2": {
+			"niveau":2,
 			"question": "A votre avis, quel bout de code permet d’afficher le message suivant : “BRAVO, vous êtes admis au NovemLab”",
-			"propositions": ["if (etapesReussies =! 4) {console.log(“BRAVO, vous êtes admis au NovemLab”)}","if (etapesReussies >3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "if (etapesReussies < 3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}"]
+			"propositions": [{"reponse" : "if (etapesReussies =! 4) {console.log(“BRAVO, vous êtes admis au NovemLab”)", "score" : [0,2,0,0,0,0]},{"reponse":"if (etapesReussies >3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : [0,0,0,0,0,0]}, {"reponse" : "if (etapesReussies < 3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : [0,0,0,0,0,0]}]
 		},
 		"etape3": {
+			"niveau":3,
 			"question": "Maintenant vous allez visionner une vidéo, le principe est simple… à la fin de cette séquence il faut choisir le bon type de plan",
-			"propositions": ["Plan américain","Gros plan", "Plan moyen"]
+			"propositions": [{"reponse" : "Plan américain", "score" : [0,0,0,0,0,0]}, {"reponse" : "Gros plan", "score" : [0,0,0,0,0,0]}, {"reponse" : "Plan italien", "score" : [0,0,0,0,0,2]}]
 		},
 		"etape4": {
+			"niveau":4,
 			"question": "Il est temps de faire un peu de mathématiques … Quel type de fonction correspond à ce graphique ?",
-			"propositions":["Une fonction exponentielle","Une fonction  logarithmique","Une fonction second degré"]
+			"propositions":[{"reponse" : "Une fonction exponentielle", "score" : [0,0,0,0,0,0]}, {"reponse" : "Une fonction  logarithmique", "score" : [0,0,0,0,0,0]}, {"reponse" : "Une fonction second degré", "score" : [2,0,0,0,0,0]}]
 		},
 		"etape5": {
+			"niveau":5,
 			"question": "Comme première décision, vous devez classer par ordre d’importance les tâches suivantes",
-			"propositions": ["Gestion de projet","Design et maquetting","Étude de marché","Développement","Phase de tests","Promotion"]
+			"propositions": [{"reponse" : "Gestion de projet", "score" : [2,2,2,2,2,2]}, {"reponse" : "Design et maquetting", "score" : [2,2,2,2,2,2]}, {"reponse" : "Étude de marché", "score" : [2,2,2,2,2,2]}, {"reponse" :"Développement", "score" : [2,2,2,2,2,2]}, {"reponse" : "Phase de tests", "score" : [2,2,2,2,2,2]}, {"reponse" : "Promotion" ,"score" : [2,2,2,2,2,2]}]
 		},
 		"etape6": {
+			"niveau":6,
 			"question": "Pour promouvoir au mieux notre projet, nous avons la possibilité de choisir 2 canaux de publicité parmi  ces 5 possibilités. Faites votre choix et classez-les selon le degré d’impact.",
-			"propositions": ["Flyers","Site web","Street marketing","Réseaux sociaux"]
+			"propositions": [{"reponse" : "Flyers", "score" : [2,2,2,2,2,2]}, {"reponse" : "Site web", "score" : [2,2,2,2,2,2]},  {"reponse" : "Street marketing", "score" : [2,2,2,2,2,2]}, {"reponse" : "Réseaux sociaux", "score" : [2,2,2,2,2,2]}]
 		},
 		"etape7": {
+			"niveau":7,
 			"question": "Pour promouvoir au mieux notre projet, nous avons la possibilité de choisir 2 canaux de publicité parmi  ces 5 possibilités. Faites votre choix et classez-les selon le degré d’impact.",
-			"propositions": ["R&D","Update","Renforcement des éléments graphiques de l’application","Agrandir les ressources","Investir dans d’autres produits","Promotion en continu"]
+			"propositions": [{"reponse" : "R&D", "score" : [2,2,2,2,2,2]}, {"reponse" : "Update", "score" : [2,2,2,2,2,2]}, {"reponse" : "Renforcement des éléments graphiques de l’application", "score" : [2,2,2,2,2,2]}, {"reponse" : "Agrandir les ressources", "score" : [2,2,2,2,2,2]}, {"reponse" : "Investir dans d’autres produits", "score" : [2,2,2,2,2,2]}, {"reponse" : "Promotion en continu", "score" : [2,2,2,2,2,2]}]
 		}
 	},
 	"scores": {

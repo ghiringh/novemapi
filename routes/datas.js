@@ -1,6 +1,6 @@
 var express = require('express');
 var seeder = require('mongoose-seeder'),
-	data = require('../data.json');
+	datas = require('../datas.json');
 
 const Etape = require('../models/etape');
 const Evenement = require('../models/evenement');
@@ -41,7 +41,7 @@ router.delete('/', function(req, res, next) {
 
 router.post('/',function(req, res, next) {
  
-	seeder.seed(data).then(function(dbData) {
+	seeder.seed(datas).then(function(dbData) {
 		res.sendStatus(204);
 	}).catch(function(err) {
 		return next(err);

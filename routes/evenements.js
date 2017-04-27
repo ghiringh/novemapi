@@ -36,7 +36,7 @@ router.post('/', checkPlageLibre,function(req, res, next) {
 });
 
 /* PATCH update evenement */
-router.patch('/:id', loadEvenement, function(req, res, next) {
+router.patch('/:id',checkPlageLibre, loadEvenement, function(req, res, next) {
 
 	if (req.body.nom !== undefined) {
 		req.evenement.nom = req.body.nom;
@@ -86,10 +86,16 @@ function loadEvenement(req, res, next) {
 }
 
 function checkPlageLibre(req, res, next){
-	Evenement.findOne({$or:[
-		{"date_debut": {$lte: req.body.date_debut}, "date_fin": {$gt: req.body.date_debut}},
-		{"date_debut": {$lt: req.body.date_fin}, "date_fin": {$gte: req.body.date_fin}},
-		{"date_debut": {$gte: req.body.date_debut}, "date_fin": {$lte: req.body.date_fin}}]}).exec(function(err, evenement) {
+	Evenement.findOne(
+		{$and: [
+			{$or:[
+				{"date_debut": {$lte: req.body.date_debut}, "date_fin": {$gt: req.body.date_debut}},
+				{"date_debut": {$lt: req.body.date_fin}, "date_fin": {$gte: req.body.date_fin}},
+				{"date_debut": {$gte: req.body.date_debut}, "date_fin": {$lte: req.body.date_fin}}
+			]},
+			{"_id": {$ne: req.params.id}}
+		]
+	}).exec(function(err, evenement) {
 		if (err) {
 			return next(err);
 		} else if (evenement) {

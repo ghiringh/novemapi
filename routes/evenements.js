@@ -36,7 +36,7 @@ router.post('/', checkPlageLibre,function(req, res, next) {
 });
 
 /* PATCH update evenement */
-router.patch('/:id',checkPlageLibre, loadEvenement, function(req, res, next) {
+router.patch('/:id', loadEvenement, checkPlageLibre, function(req, res, next) {
 
 	if (req.body.nom !== undefined) {
 		req.evenement.nom = req.body.nom;

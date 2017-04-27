@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const Joueur = require('../models/joueur');
+const Evenement = require('../models/evenement');
 
 /* GET joueurs listing. */
 router.get('/', function(req, res, next) {
@@ -18,7 +19,7 @@ router.get('/:id', loadJoueur, function(req, res, next) {
 });
 
 /* POST new joueur */
-router.post('/', function(req, res, next) {
+router.post('/', evenementEnCours, function(req, res, next) {
 	// Create a new document from the JSON in the request body
 	const newJoueur = new Joueur(req.body);
 
@@ -77,6 +78,17 @@ function loadJoueur(req, res, next) {
 			return res.status(404).send('Aucun joueur trouvé avec cet identifiant : ' + req.params.id);
 		}
 		req.joueur = joueur;
+		next();
+	});
+}
+
+function evenementEnCours(req, res, next) {
+	Evenement.findOne({$and: [{"date_debut": {$lt: Date.now()}},{"date_fin": {$gt: Date.now()}}]}).exec(function(err, evenement) {
+		if (err) {
+			return next(err);
+		} else if (evenement) {
+			req.body.evenement_id = evenement._id;
+		}
 		next();
 	});
 }

@@ -20,20 +20,20 @@ const etapeSchema = new Schema({
 	}*/
 
 	propositions: {
-		niveau: {type: Number},
-		question: {type: String},
-		propositions: [{
-			reponse: {type: String},
+		niveau: Number,
+		question: String,
+		propositions: {
+			reponse: String,
 			score: {
-				business:{type: Number},
-				coding: {type: Number},
-				communication : {type: Number},
-				management : {type: Number},
-				marketing : {type: Number},
-				multimedia: {type: Number}
+				business:Number,
+				coding: Number,
+				communication : Number,
+				management : Number,
+				marketing : Number,
+				multimedia: Number
 			},
-			competence: {type: Number}
-		}]
+			competence: String
+		}
 	},
 	
 	date_creation: {

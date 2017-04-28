@@ -2,8 +2,8 @@ var validator = require('validator');
 const mongoose = require('mongoose');
 const Joueur = require('../models/joueur');
 const Schema = mongoose.Schema;
+var uniqueValidator = require('mongoose-unique-validator');
 
-// Define the schema for scores
 const scoreSchema = new Schema({
 
 	business:{
@@ -44,17 +44,14 @@ const scoreSchema = new Schema({
 		validate: existingJoueur
 	},
 
-	// date de la création du score
+
 	date_creation: {
 		type: Date,
 		default: Date.now
 	}
 	
-});
+}).plugin(uniqueValidator);
 
-/**
- * fonction qui valide si le joueur existe, via son id
- */
 function existingJoueur(value, callback) {
 	Joueur.findOne({ '_id': value }, function (err, joueur){
 		if (joueur){
@@ -65,5 +62,4 @@ function existingJoueur(value, callback) {
 	});
 }
 
-// Create the model from the schema and export it
 module.exports = mongoose.model('Score', scoreSchema);

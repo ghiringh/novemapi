@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 const Staff = require('../models/staff');
 const Schema = mongoose.Schema;
 
-// Define the schema for scores
 const evenementSchema = new Schema({
 	nom:{
 		type: String, 
@@ -27,7 +26,6 @@ const evenementSchema = new Schema({
 		validate: dateFin
 	},
 
-	// date de la création de l'évènement
 	date_creation: {
 		type: Date,
 		default: Date.now
@@ -65,9 +63,6 @@ function dateFin(value) {
 	return value > this.date_debut;
 }
 
-/**
- * fonction qui valide si le staff existe, via son id
- */
 function existingStaff(value, callback) {
 	Staff.findOne({ '_id': value }, function (err, staff){
 		if (staff){
@@ -78,5 +73,4 @@ function existingStaff(value, callback) {
 	});
 }
 
-// Create the model from the schema and export it
 module.exports = mongoose.model('Evenement', evenementSchema);

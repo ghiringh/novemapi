@@ -2,6 +2,7 @@ var validator = require('validator');
 const mongoose = require('mongoose');
 const Evenement = require('../models/evenement');
 const Schema = mongoose.Schema;
+var uniqueValidator = require('mongoose-unique-validator');
 
 const joueurSchema = new Schema({
 
@@ -48,7 +49,7 @@ const joueurSchema = new Schema({
 		default: Date.now
 	}
 	
-});
+}).plugin(uniqueValidator);
 
 /**
  * fonction qui valide si le score existe, via son id

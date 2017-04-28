@@ -56,10 +56,10 @@
 	"joueurs": {
 		"_model": "Joueur",
 		"joueur1": {
-			"pseudo": "yanno",
-			"prenom": "Yann",
-			"nom": "Orioli",
-			"email":"yann@orioli.com",
+			"pseudo": "macl0m",
+			"prenom": "Malcom",
+			"nom": "Josh",
+			"email":"malcom@josh.com",
 			"evenement_id": "->evenements.evenement1"
 		},
 		"joueur2": {
@@ -87,10 +87,10 @@
 			"email":"naomi@maitre.com",
 			"evenement_id": "->evenements.evenement1"
 		},"joueur6": {
-			"pseudo": "adupasquier",
+			"pseudo": "adumaz",
 			"prenom": "Aurélie",
-			"nom": "Dupasquier",
-			"email":"aurelie@dupasquier.com",
+			"nom": "Dumaz",
+			"email":"aurelie@dumaz.com",
 			"evenement_id": "->evenements.evenement1"
 		},"joueur7": {
 			"pseudo": "st3v3n",

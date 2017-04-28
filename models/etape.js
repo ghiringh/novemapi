@@ -31,7 +31,7 @@ const etapeSchema = new Schema({
 				management : Number,
 				marketing : Number,
 				multimedia: Number
-			}
+			},
 			competence: String
 		}
 	},

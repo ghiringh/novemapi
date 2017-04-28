@@ -4,7 +4,7 @@ const Staff = require('../models/staff');
 
 /* GET staffs listing. */
 router.get('/', function(req, res, next) {
-Staff.find().sort('id').exec(function(err, staffs) {
+Staff.find().sort('nom').exec(function(err, staffs) {
 	if (err) {
 		return next(err);
 	}

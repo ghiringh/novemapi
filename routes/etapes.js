@@ -4,7 +4,7 @@ const Etape = require('../models/etape');
 
 /* GET etapes listing. */
 router.get('/', function(req, res, next) {
-Etape.find().sort('id').exec(function(err, etapes) {
+Etape.find().sort('question').exec(function(err, etapes) {
 	if (err) {
 		return next(err);
 	}

@@ -5,7 +5,7 @@ const Evenement = require('../models/evenement');
 
 /* GET joueurs listing. */
 router.get('/', function(req, res, next) {
-Joueur.find().sort('id').exec(function(err, joueurs) {
+Joueur.find().sort('nom').exec(function(err, joueurs) {
 	if (err) {
 		return next(err);
 	}

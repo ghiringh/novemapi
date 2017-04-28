@@ -20,10 +20,20 @@ const etapeSchema = new Schema({
 	}*/
 
 	propositions: {
-		type: Array,
-		required: true,
-		minlength: [ 2, 'La proposition est trop courte' ],
-		maxlength: [ 1000, 'La proposition est trop longue' ]
+		niveau: Number,
+		question: String,
+		propositions: {
+			reponse: String,
+			score: {
+				business:Number,
+				coding: Number,
+				communication : Number,
+				management : Number,
+				marketing : Number,
+				multimedia: Number
+			}
+			competence: String
+		}
 	},
 	
 	date_creation: {

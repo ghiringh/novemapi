@@ -123,37 +123,37 @@
 		"etape1": {
 			"niveau":1,
 			"question": ", Vous voilà dans la salle des équipements. A vous de choisir 3 outils parmi la sélection proposée qui pourront, potentiellement, t’être utiles durant les diverses étapes de cette aventure.",
-			"propositions": [{"reponse" : "Ordinateur", "score" : [0,2,0,0,0,2]}, {"reponse" : "Caméra", "score" : [0,0,0,0,0,4]}, {"reponse" : "Plan marketing", "score" : [0,0,0,0,4,0]}, {"reponse" : "Calculatrice", "score" : [4,0,0,0,0,0]}, {"reponse" : "Debugger", "score" : [0,4,0,0,0,0]},{"reponse" : "Imprimante", "score" : [0,0,0,0,0,4]}, {"reponse" : "Ecran pub", "score" : [0,0,1,0,3,0]}, {"reponse" : "Assistant administratif", "score" : [2,0,0,2,0,0]}, {"reponse" : "ERP", "score" : [0,0,0,4,0,0]}]
+			"propositions": [{"reponse" : "Ordinateur", "score" : {"business":0 ,"coding": 2, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 2}}, {"reponse" : "Caméra", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 4}}, {"reponse" : "Plan marketing", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 4,"multimedia": 0}}, {"reponse" : "Calculatrice", "score" : {"business":4 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "Debugger", "score" : [0,4,0,0,0,0]},{"reponse" : "Imprimante", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 4}}, {"reponse" : "Ecran pub", "score" : {"business":0 ,"coding": 0, "communication" : 1, "management" : 0,"marketing" : 3,"multimedia": 0}}, {"reponse" : "Assistant administratif", "score" : {"business":2 ,"coding": 0, "communication" : 2, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "ERP", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 4,"marketing" : 0,"multimedia": 0}}]
 		},
 		"etape2": {
 			"niveau":2,
 			"question": "A votre avis, quel bout de code permet d’afficher le message suivant : “BRAVO, vous êtes admis au NovemLab”",
-			"propositions": [{"reponse" : "if (etapesReussies =! 4) {console.log(“BRAVO, vous êtes admis au NovemLab”)", "score" : [0,2,0,0,0,0]},{"reponse":"if (etapesReussies >3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : [0,0,0,0,0,0]}, {"reponse" : "if (etapesReussies < 3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : [0,0,0,0,0,0]}]
+			"propositions": [{"reponse" : "if (etapesReussies =! 4) {console.log(“BRAVO, vous êtes admis au NovemLab”)", "score" : {"business":0 ,"coding": 2, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}},{"reponse":"if (etapesReussies >3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "if (etapesReussies < 3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}]
 		},
 		"etape3": {
 			"niveau":3,
 			"question": "Maintenant vous allez visionner une vidéo, le principe est simple… à la fin de cette séquence il faut choisir le bon type de plan",
-			"propositions": [{"reponse" : "Plan américain", "score" : [0,0,0,0,0,0]}, {"reponse" : "Gros plan", "score" : [0,0,0,0,0,0]}, {"reponse" : "Plan italien", "score" : [0,0,0,0,0,2]}]
+			"propositions": [{"reponse" : "Plan américain", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "Gros plan", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "Plan italien", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 2}}]
 		},
 		"etape4": {
 			"niveau":4,
 			"question": "Il est temps de faire un peu de mathématiques … Quel type de fonction correspond à ce graphique ?",
-			"propositions":[{"reponse" : "Une fonction exponentielle", "score" : [0,0,0,0,0,0]}, {"reponse" : "Une fonction  logarithmique", "score" : [0,0,0,0,0,0]}, {"reponse" : "Une fonction second degré", "score" : [2,0,0,0,0,0]}]
+			"propositions":[{"reponse" : "Une fonction exponentielle", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "Une fonction  logarithmique", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "Une fonction second degré", "score" : {"business":2 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}]
 		},
 		"etape5": {
 			"niveau":5,
 			"question": "Comme première décision, vous devez classer par ordre d’importance les tâches suivantes",
-			"propositions": [{"reponse" : "Gestion de projet", "score" : [2,2,2,2,2,2]}, {"reponse" : "Design et maquetting", "score" : [2,2,2,2,2,2]}, {"reponse" : "Étude de marché", "score" : [2,2,2,2,2,2]}, {"reponse" :"Développement", "score" : [2,2,2,2,2,2]}, {"reponse" : "Phase de tests", "score" : [2,2,2,2,2,2]}, {"reponse" : "Promotion" ,"score" : [2,2,2,2,2,2]}]
+			"propositions": [{"reponse" : "Gestion de projet", "competence" : "management"}, {"reponse" : "Design et maquetting", "competence" : "multimédia"}, {"reponse" : "Étude de marché", "competence" : "business"}, {"reponse" :"Développement", "competence" : "code"}, {"reponse" : "Phase de tests", "competence" : "managment"}, {"reponse" : "Promotion" ,"competence" : "marketing"}]
 		},
 		"etape6": {
 			"niveau":6,
 			"question": "Pour promouvoir au mieux notre projet, nous avons la possibilité de choisir 2 canaux de publicité parmi  ces 5 possibilités. Faites votre choix et classez-les selon le degré d’impact.",
-			"propositions": [{"reponse" : "Flyers", "score" : [2,2,2,2,2,2]}, {"reponse" : "Site web", "score" : [2,2,2,2,2,2]},  {"reponse" : "Street marketing", "score" : [2,2,2,2,2,2]}, {"reponse" : "Réseaux sociaux", "score" : [2,2,2,2,2,2]}]
+			"propositions": [{"reponse" : "Flyers", "competence" : "multimédia"}, {"reponse" : "Site web", "competence" : "coding"},  {"reponse" : "Street marketing", "competence" : "marketing"}, {"reponse" : "Réseaux sociaux", "competence" : "communication"}]
 		},
 		"etape7": {
 			"niveau":7,
 			"question": "Pour promouvoir au mieux notre projet, nous avons la possibilité de choisir 2 canaux de publicité parmi  ces 5 possibilités. Faites votre choix et classez-les selon le degré d’impact.",
-			"propositions": [{"reponse" : "R&D", "score" : [2,2,2,2,2,2]}, {"reponse" : "Update", "score" : [2,2,2,2,2,2]}, {"reponse" : "Renforcement des éléments graphiques de l’application", "score" : [2,2,2,2,2,2]}, {"reponse" : "Agrandir les ressources", "score" : [2,2,2,2,2,2]}, {"reponse" : "Investir dans d’autres produits", "score" : [2,2,2,2,2,2]}, {"reponse" : "Promotion en continu", "score" : [2,2,2,2,2,2]}]
+			"propositions": [{"reponse" : "R&D", "competence" : "business"}, {"reponse" : "Update", "competence" : "code"}, {"reponse" : "Renforcement des éléments graphiques de l’application", "competence" : "multimedia"}, {"reponse" : "Agrandir les ressources", "competence" : "management"}, {"reponse" : "Investir dans d’autres produits", "competence" : "business"}, {"reponse" : "Promotion en continu", "competence" : "marketing"}]
 		}
 	},
 	"scores": {

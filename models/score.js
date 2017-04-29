@@ -2,7 +2,6 @@ var validator = require('validator');
 const mongoose = require('mongoose');
 const Joueur = require('../models/joueur');
 const Schema = mongoose.Schema;
-var uniqueValidator = require('mongoose-unique-validator');
 
 const scoreSchema = new Schema({
 
@@ -50,7 +49,7 @@ const scoreSchema = new Schema({
 		default: Date.now
 	}
 	
-}).plugin(uniqueValidator);
+});
 
 function existingJoueur(value, callback) {
 	Joueur.findOne({ '_id': value }, function (err, joueur){

@@ -1,7 +1,6 @@
 var validator = require('validator');
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-var uniqueValidator = require('mongoose-unique-validator');
 
 const staffSchema = new Schema({
 
@@ -39,6 +38,6 @@ const staffSchema = new Schema({
 		default: Date.now
 	}
 	
-}).plugin(uniqueValidator);
+});
 
 module.exports = mongoose.model('Staff', staffSchema);

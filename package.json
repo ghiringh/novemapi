@@ -19,7 +19,6 @@
     "mongodb": "^2.2.25",
     "mongoose": "^4.9.4",
     "mongoose-seeder": "^1.2.1",
-    "mongoose-unique-validator": "^1.0.5",
     "morgan": "~1.8.1",
     "serve-favicon": "~2.4.2",
     "validator": "^7.0.0"

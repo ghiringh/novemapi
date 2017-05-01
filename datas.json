@@ -34,7 +34,7 @@
 			"date_debut": "2017-05-04T07:30:00+02:00",
 			"date_fin": "2017-05-04T16:30:00+02:00",
 			"details":{
-				"ojectifs": "Recruter de nouveaux étudiants, faire connaître l'ingénierie des médias",
+				"objectifs": "Recruter de nouveaux étudiants, faire connaître l'ingénierie des médias",
 				"description": "",
 				"remarques": "",
 				"public": "Etudiants en communication et en technique, 15 à 20 ans"
@@ -46,7 +46,7 @@
 			"date_debut": "2017-08-23T08:00:00.000",
 			"date_fin": "2017-08-23T18:00:00.000",
 			"details":{
-				"ojectifs": "Présenter les locaux des ingénieur des médias",
+				"objectifs": "Présenter les locaux des ingénieur des médias",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in justo sapien. Proin sit amet metus finibus, tristique odio eget, placerat lacus. In ante nisl, eleifend ut aliquam quis, luctus vitae nisi. Aenean in blandit libero, quis placerat enim. In ut rutrum diam, quis egestas ex. Ut pharetra, magna vel consequat tincidunt, arcu mauris vestibulum lacus, hendrerit luctus nibh sem id orci. Aenean lobortis accumsan nulla, et vulputate lacus feugiat quis. Fusce sapien metus, venenatis vitae ipsum ac, scelerisque tincidunt purus. Quisque eleifend et quam molestie facilisis. Vestibulum nec felis ut est ullamcorper pellentesque sed at risus. Suspendisse non dictum mauris. Integer ac mollis neque, id posuere lacus. Morbi non convallis mi. In mollis accumsan ipsum ultricies egestas. Aliquam enim ex, efficitur vitae dapibus eu, venenatis ut lacus. Quisque mattis at nulla dictum vestibulum.",
 				"remarques": "Ut efficitur nisl sapien, vel dapibus ante sollicitudin sit amet. Praesent mollis ante ac facilisis cursus. Sed iaculis, neque vel blandit iaculis, dolor turpis finibus massa, vitae imperdiet massa enim ut magna. Integer mollis dui scelerisque, pretium risus ut, fringilla est. Pellentesque pretium tempor metus vitae volutpat. Sed eget enim sit amet justo iaculis tristique. Vivamus in faucibus tellus. Aliquam et scelerisque nisl. Suspendisse faucibus elit urna.",
 				"public": "Jeunes de 15 à 20 ans"

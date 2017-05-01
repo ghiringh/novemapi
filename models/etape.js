@@ -4,6 +4,11 @@ const Schema = mongoose.Schema;
 
 const etapeSchema = new Schema({
 
+	niveau: {
+		type: Number,
+		required: true
+	},
+
 	question: {
 		type: String,
 		required: true,

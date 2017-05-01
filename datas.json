@@ -132,8 +132,8 @@
 		},
 		"etape3": {
 			"niveau":3,
-			"question": "Maintenant vous allez visionner une vidéo, le principe est simple… à la fin de cette séquence il faut choisir le bon type de plan",
-			"propositions": [{"reponse" : "Plan américain", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "Gros plan", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "Plan italien", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 2}}]
+			"question": "Maintenant vous allez visionner une vidéo. Selon vous, quel est le type de plan de cette vidéo ?",
+			"propositions": [{"reponse" : "Plan américain", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "Plan taille", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 2}}, {"reponse" : "Plan italien", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}]
 		},
 		"etape4": {
 			"niveau":4,

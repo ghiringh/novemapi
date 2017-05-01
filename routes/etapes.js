@@ -17,6 +17,11 @@ router.get('/:id', loadEtape, function(req, res, next) {
 	res.send(req.etape);
 });
 
+/* GET etape by niveau */
+router.get('/niveau/:niveau', loadEtapeNiveau, function(req, res, next) {
+	res.send(req.etape);
+});
+
 /* POST new etape */
 router.post('/', function(req, res, next) {
 	// Create a new document from the JSON in the request body
@@ -69,6 +74,18 @@ function loadEtape(req, res, next) {
 			return next(err);
 		} else if (!etape) {
 			return res.status(404).send('Aucune étape trouvée avec cet identifiant : ' + req.params.id);
+		}
+		req.etape = etape;
+		next();
+	});
+}
+
+function loadEtapeNiveau(req, res, next) {
+	Etape.findOne({"niveau" : req.params.niveau}).exec(function(err, etape) {
+		if (err) {
+			return next(err);
+		} else if (!etape) {
+			return res.status(404).send('Aucune étape trouvée avec ce niveau : ' + req.params.niveau);
 		}
 		req.etape = etape;
 		next();

@@ -31,22 +31,22 @@
 		"evenement1": {
 			"nom": "Journée à l'ERACOM",
 			"staff_id": "->staffs.staff1",
-			"date_debut": "2017-05-04T07:30:00+02:00",
-			"date_fin": "2017-05-04T16:30:00+02:00",
+			"date_debut": "2017-05-05T08:00:00.000Z",
+			"date_fin": "2017-05-05T18:00:00.000Z",
 			"details":{
-				"objectifs": "Recruter de nouveaux étudiants, faire connaître l'ingénierie des médias",
-				"description": "",
-				"remarques": "",
+				"ojectifs": "Recruter de nouveaux étudiants, faire connaître l'ingénierie des médias",
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in justo sapien. Proin sit amet metus finibus, tristique odio eget, placerat lacus. In ante nisl, eleifend ut aliquam quis, luctus vitae nisi. Aenean in blandit libero, quis placerat enim. In ut rutrum diam, quis egestas ex. Ut pharetra, magna vel consequat tincidunt, arcu mauris vestibulum lacus, hendrerit luctus nibh sem id orci. Aenean lobortis accumsan nulla, et vulputate lacus feugiat quis. Fusce sapien metus, venenatis vitae ipsum ac, scelerisque tincidunt purus. Quisque eleifend et quam molestie facilisis. Vestibulum nec felis ut est ullamcorper pellentesque sed at risus. Suspendisse non dictum mauris. Integer ac mollis neque, id posuere lacus. Morbi non convallis mi. In mollis accumsan ipsum ultricies egestas. Aliquam enim ex, efficitur vitae dapibus eu, venenatis ut lacus. Quisque mattis at nulla dictum vestibulum.",
+				"remarques": "Ut efficitur nisl sapien, vel dapibus ante sollicitudin sit amet. Praesent mollis ante ac facilisis cursus. Sed iaculis, neque vel blandit iaculis, dolor turpis finibus massa, vitae imperdiet massa enim ut magna. Integer mollis dui scelerisque, pretium risus ut, fringilla est. Pellentesque pretium tempor metus vitae volutpat. Sed eget enim sit amet justo iaculis tristique. Vivamus in faucibus tellus. Aliquam et scelerisque nisl. Suspendisse faucibus elit urna.",
 				"public": "Etudiants en communication et en technique, 15 à 20 ans"
 			}
 		},
 		"evenement2": {
 			"nom": "Journée portes ouvertes",
 			"staff_id": "->staffs.staff2",
-			"date_debut": "2017-08-23T08:00:00.000",
-			"date_fin": "2017-08-23T18:00:00.000",
+			"date_debut": "2017-08-23T08:00:00.000Z",
+			"date_fin": "2017-08-23T18:00:00.000Z",
 			"details":{
-				"objectifs": "Présenter les locaux des ingénieur des médias",
+				"ojectifs": "Présenter les locaux des ingénieur des médias",
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in justo sapien. Proin sit amet metus finibus, tristique odio eget, placerat lacus. In ante nisl, eleifend ut aliquam quis, luctus vitae nisi. Aenean in blandit libero, quis placerat enim. In ut rutrum diam, quis egestas ex. Ut pharetra, magna vel consequat tincidunt, arcu mauris vestibulum lacus, hendrerit luctus nibh sem id orci. Aenean lobortis accumsan nulla, et vulputate lacus feugiat quis. Fusce sapien metus, venenatis vitae ipsum ac, scelerisque tincidunt purus. Quisque eleifend et quam molestie facilisis. Vestibulum nec felis ut est ullamcorper pellentesque sed at risus. Suspendisse non dictum mauris. Integer ac mollis neque, id posuere lacus. Morbi non convallis mi. In mollis accumsan ipsum ultricies egestas. Aliquam enim ex, efficitur vitae dapibus eu, venenatis ut lacus. Quisque mattis at nulla dictum vestibulum.",
 				"remarques": "Ut efficitur nisl sapien, vel dapibus ante sollicitudin sit amet. Praesent mollis ante ac facilisis cursus. Sed iaculis, neque vel blandit iaculis, dolor turpis finibus massa, vitae imperdiet massa enim ut magna. Integer mollis dui scelerisque, pretium risus ut, fringilla est. Pellentesque pretium tempor metus vitae volutpat. Sed eget enim sit amet justo iaculis tristique. Vivamus in faucibus tellus. Aliquam et scelerisque nisl. Suspendisse faucibus elit urna.",
 				"public": "Jeunes de 15 à 20 ans"
@@ -56,10 +56,10 @@
 	"joueurs": {
 		"_model": "Joueur",
 		"joueur1": {
-			"pseudo": "macl0m",
-			"prenom": "Malcom",
-			"nom": "Josh",
-			"email":"malcom@josh.com",
+			"pseudo": "yanno",
+			"prenom": "Yann",
+			"nom": "Orioli",
+			"email":"yann@orioli.com",
 			"evenement_id": "->evenements.evenement1"
 		},
 		"joueur2": {
@@ -87,10 +87,10 @@
 			"email":"naomi@maitre.com",
 			"evenement_id": "->evenements.evenement1"
 		},"joueur6": {
-			"pseudo": "adumaz",
+			"pseudo": "adupasquier",
 			"prenom": "Aurélie",
-			"nom": "Dumaz",
-			"email":"aurelie@dumaz.com",
+			"nom": "Dupasquier",
+			"email":"aurelie@dupasquier.com",
 			"evenement_id": "->evenements.evenement1"
 		},"joueur7": {
 			"pseudo": "st3v3n",
@@ -123,17 +123,17 @@
 		"etape1": {
 			"niveau":1,
 			"question": ", Vous voilà dans la salle des équipements. A vous de choisir 3 outils parmi la sélection proposée qui pourront, potentiellement, t’être utiles durant les diverses étapes de cette aventure.",
-			"propositions": [{"reponse" : "Ordinateur", "score" : {"business":0 ,"coding": 2, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 2}}, {"reponse" : "Caméra", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 4}}, {"reponse" : "Plan marketing", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 4,"multimedia": 0}}, {"reponse" : "Calculatrice", "score" : {"business":4 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "Debugger", "score" : {"business":0 ,"coding": 4, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}},{"reponse" : "Imprimante", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 4}}, {"reponse" : "Ecran pub", "score" : {"business":0 ,"coding": 0, "communication" : 1, "management" : 0,"marketing" : 3,"multimedia": 0}}, {"reponse" : "Assistant administratif", "score" : {"business":2 ,"coding": 0, "communication" : 2, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "ERP", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 4,"marketing" : 0,"multimedia": 0}}]
+			"propositions": [{"reponse" : "Ordinateur", "score" : {"business":0 ,"coding": 2, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 2}}, {"reponse" : "Caméra", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 4}}, {"reponse" : "Plan marketing", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 4,"multimedia": 0}}, {"reponse" : "Calculatrice", "score" : {"business":4 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "Debugger", "score" : {"business":0 ,"coding": {"business":0 ,"coding": 4, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}},{"reponse" : "Imprimante", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 4}}, {"reponse" : "Ecran pub", "score" : {"business":0 ,"coding": 0, "communication" : 1, "management" : 0,"marketing" : 3,"multimedia": 0}}, {"reponse" : "Assistant administratif", "score" : {"business":2 ,"coding": 0, "communication" : 2, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "ERP", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 4,"marketing" : 0,"multimedia": 0}}]
 		},
 		"etape2": {
 			"niveau":2,
 			"question": "A votre avis, quel bout de code permet d’afficher le message suivant : “BRAVO, vous êtes admis au NovemLab”",
-			"propositions": [{"reponse" : "if (etapesReussies =! 4) {console.log(“BRAVO, vous êtes admis au NovemLab”)", "score" : {"business":0 ,"coding": 2, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}},{"reponse":"if (etapesReussies >3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "if (etapesReussies < 3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}]
+			"propositions": [{"reponse" : "var etapesReussies = 3; if (etapesReussies =! 4) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : {"business":0 ,"coding": 2, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}},{"reponse":"var etapesReussies = 3; if (etapesReussies >3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "var etapesReussies = 3; if (etapesReussies < 3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}]
 		},
 		"etape3": {
 			"niveau":3,
-			"question": "Maintenant vous allez visionner une vidéo. Selon vous, quel est le type de plan de cette vidéo ?",
-			"propositions": [{"reponse" : "Plan américain", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "Plan taille", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 2}}, {"reponse" : "Plan italien", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}]
+			"question": " Maintenant vous allez visionner une vidéo, le principe est simple… à la fin de cette séquence il faut choisir le bon type de plan",
+			"propositions": [{"reponse" : "Plan américain", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "Plan taille", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}, {"reponse" : "Plan italien", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 2}}]
 		},
 		"etape4": {
 			"niveau":4,
@@ -142,17 +142,17 @@
 		},
 		"etape5": {
 			"niveau":5,
-			"question": "Comme première décision, vous devez classer par ordre d’importance les tâches suivantes",
+			"question": "Vous êtes chef de la startup NovemUp, comme première décision, vous devez classer par ordre d’importance les tâches suivantes",
 			"propositions": [{"reponse" : "Gestion de projet", "competence" : "management"}, {"reponse" : "Design et maquetting", "competence" : "multimédia"}, {"reponse" : "Étude de marché", "competence" : "business"}, {"reponse" :"Développement", "competence" : "code"}, {"reponse" : "Phase de tests", "competence" : "managment"}, {"reponse" : "Promotion" ,"competence" : "marketing"}]
 		},
 		"etape6": {
 			"niveau":6,
-			"question": "Pour promouvoir au mieux notre projet, nous avons la possibilité de choisir 2 canaux de publicité parmi  ces 5 possibilités. Faites votre choix et classez-les selon le degré d’impact.",
+			"question": "Pour promouvoir au mieux notre projet, nous avons la possibilité de choisir 2 canaux de publicité parmi  ces 4 possibilités. Faites votre choix et classez-les selon le degré d’impact.",
 			"propositions": [{"reponse" : "Flyers", "competence" : "multimédia"}, {"reponse" : "Site web", "competence" : "coding"},  {"reponse" : "Street marketing", "competence" : "marketing"}, {"reponse" : "Réseaux sociaux", "competence" : "communication"}]
 		},
 		"etape7": {
 			"niveau":7,
-			"question": "Pour promouvoir au mieux notre projet, nous avons la possibilité de choisir 2 canaux de publicité parmi  ces 5 possibilités. Faites votre choix et classez-les selon le degré d’impact.",
+			"question": "Finalement, il est temps de prendre une décision crutiale pour l'avenir de la startup,  vous avez la possibilité de choisir 2 canaux de publicité parmi ces 6 possibilités. Faites votre choix et classez-les selon le degré d’impact.",
 			"propositions": [{"reponse" : "R&D", "competence" : "business"}, {"reponse" : "Update", "competence" : "code"}, {"reponse" : "Renforcement des éléments graphiques de l’application", "competence" : "multimedia"}, {"reponse" : "Agrandir les ressources", "competence" : "management"}, {"reponse" : "Investir dans d’autres produits", "competence" : "business"}, {"reponse" : "Promotion en continu", "competence" : "marketing"}]
 		}
 	},

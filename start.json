@@ -2,7 +2,6 @@
 		"_model": "Evenement",
 		"evenement1": {
 			"nom": "Journée à l'ERACOM",
-			"staff_id": "->staffs.staff1",
 			"date_debut": "2017-05-04T08:00:00.000+02:00",
 			"date_fin": "2017-05-04T18:00:00.000+02:00",
 			"details":{

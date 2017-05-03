@@ -5,11 +5,26 @@ const Evenement = require('../models/evenement');
 
 /* GET joueurs listing. */
 router.get('/', function(req, res, next) {
-Joueur.find().sort('nom').exec(function(err, joueurs) {
-	if (err) {
-		return next(err);
-	}
-	res.send(joueurs);
+	Joueur.find().sort('nom').exec(function(err, joueurs) {
+		if (err) {
+			return next(err);
+		}
+		res.send(joueurs);
+	});
+});
+
+router.get('/emails', function(req, res, next) {
+	Joueur.find().sort('email').exec(function(err, joueurs) {
+		if (err) {
+			return next(err);
+		}
+		var emails = "";
+		Object.keys(joueurs).forEach(function(joueur){
+			if(joueurs[joueur].email != undefined){
+				emails = emails + joueurs[joueur].email + ",";
+			}		
+		})
+		res.send(emails);
 	});
 });
 

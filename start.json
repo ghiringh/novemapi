@@ -80,12 +80,12 @@
 		},
 		"etape7": {
 			"niveau":7,
-			"question": "Finalement, il est temps de prendre une décision crutiale pour l'avenir de la startup,  vous avez la possibilité de choisir 2 canaux de publicité parmi ces 6 possibilités. Faites votre choix et classez-les selon le degré d’impact.",
+			"question": "Finalement, il est temps de prendre une décision crutiale pour l'avenir de la startup. Vous avez la possibilité de choisir 3 décision stratégiques parmi ces 6 possibilités. Faites votre choix et classez-les selon le degré d’importance.",
 			"propositions": [
 				{"reponse" : "R&D", "competence" : "business"},
-				{"reponse" : "Update", "competence" : "code"},
+				{"reponse" : "Update du produit ou du service", "competence" : "code"},
 				{"reponse" : "Renforcement des éléments graphiques de l’application", "competence" : "multimedia"},
-				{"reponse" : "Agrandir les ressources", "competence" : "management"},
+				{"reponse" : "Accroître les ressources humaines", "competence" : "management"},
 				{"reponse" : "Investir dans d’autres produits", "competence" : "business"},
 				{"reponse" : "Promotion en continu", "competence" : "marketing"}]
 		}

@@ -169,8 +169,8 @@
 				{"reponse" : "Gestion de projet", "competence" : "management"},
 				{"reponse" : "Design et maquetting", "competence" : "multimédia"},
 				{"reponse" : "Étude de marché", "competence" : "business"},
-				{"reponse" :"Développement", "competence" : "code"},
-				{"reponse" : "Phase de tests", "competence" : "managment"},
+				{"reponse" : "Développement", "competence" : "code"},
+				{"reponse" : "Plateforme de communication interne", "competence" : "communication"},
 				{"reponse" : "Promotion" ,"competence" : "marketing"}
 			]
 		},

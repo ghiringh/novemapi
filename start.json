@@ -34,8 +34,8 @@
 			"question": "A votre avis, quel bout de code permet d’afficher le message suivant : “BRAVO, vous êtes admis au NovemLab”",
 			"propositions": [
 				{"reponse" : "var etapesReussies = 3; if (etapesReussies < 3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}},
-				{"reponse" : "var etapesReussies = 3; if (etapesReussies =! 4) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : {"business":0 ,"coding": 2, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}},
-				{"reponse":"var etapesReussies = 3; if (etapesReussies >3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}
+				{"reponse" : "var etapesReussies = 3; if (etapesReussies != 4) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : {"business":0 ,"coding": 2, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}},
+				{"reponse":"var etapesReussies = 3; if (etapesReussies > 3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}
 			]
 		},
 		"etape3": {

@@ -33,7 +33,7 @@ const joueurSchema = new Schema({
 		minlength: [ 5, 'L\'adresse email est trop courte' ],
 		maxlength: [ 60, 'L\'email est trop longue' ],
 		validate: [ validator.isEmail, 'L\'adresse email n\'est pas valide' ],
-		default: "test@test.ch"
+		default: "test@test.ch" + Date.now()
 	},
 	
 	evenement_id: {

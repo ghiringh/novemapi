@@ -2,7 +2,7 @@
 		"_model": "Evenement",
 		"evenement1": {
 			"nom": "Journée à l'ERACOM",
-			"date_debut": "2017-05-04T08:00:00.000+02:00",
+			"date_debut": "2017-05-04T09:10:00.000+02:00",
 			"date_fin": "2017-05-04T18:00:00.000+02:00",
 			"details":{
 				"ojectifs": "Recruter de nouveaux étudiants, faire connaître l'ingénierie des médias",
@@ -16,7 +16,7 @@
 		"_model": "Etape",
 		"etape1": {
 			"niveau":1,
-			"question": "Vous voilà dans la salle des équipements. A vous de choisir 3 outils parmi la sélection proposée qui pourront, potentiellement, t’être utiles durant les diverses étapes de cette aventure.",
+			"question": "Vous voilà dans la salle des équipements. A vous de choisir 3 outils parmi la sélection proposée qui pourront, potentiellement, vous être utiles durant les diverses étapes de cette aventure.",
 			"propositions": [
 				{"reponse" : "Ordinateur", "score" : {"business":0 ,"coding": 2, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 2}},
 				{"reponse" : "Caméra", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 4}},
@@ -70,7 +70,7 @@
 		},
 		"etape6": {
 			"niveau":6,
-			"question": "Pour promouvoir au mieux notre projet, nous avons la possibilité de choisir 2 canaux de publicité parmi  ces 4 possibilités. Faites votre choix et classez-les selon le degré d’impact.",
+			"question": "Pour promouvoir au mieux notre projet, nous avons la possibilité de choisir 2 canaux de publicité parmi ces 4 possibilités. Faites votre choix et classez-les selon le degré d’impact.",
 			"propositions": [
 				{"reponse" : "Flyers", "competence" : "multimédia"},
 				{"reponse" : "Site web", "competence" : "coding"},
@@ -80,7 +80,7 @@
 		},
 		"etape7": {
 			"niveau":7,
-			"question": "Finalement, il est temps de prendre une décision crutiale pour l'avenir de la startup. Vous avez la possibilité de choisir 3 décision stratégiques parmi ces 6 possibilités. Faites votre choix et classez-les selon le degré d’importance.",
+			"question": "Finalement, il est temps de prendre une décision crutiale pour l'avenir de la startup. Vous avez la possibilité de choisir 3 décisions stratégiques parmi ces 6 possibilités. Faites votre choix et classez-les selon le degré d’importance.",
 			"propositions": [
 				{"reponse" : "R&D", "competence" : "business"},
 				{"reponse" : "Update du produit ou du service", "competence" : "code"},

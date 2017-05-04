@@ -29,11 +29,11 @@ const joueurSchema = new Schema({
 	email: {
 		type: String,
 		required: false,
-		unique: 'L\'adresse email est déjà utilisée',
 		lowercase: 'L\'adresse email ne peut pas contenir de caratère majuscule',
 		minlength: [ 5, 'L\'adresse email est trop courte' ],
 		maxlength: [ 60, 'L\'email est trop longue' ],
-		validate: [ validator.isEmail, 'L\'adresse email n\'est pas valide' ]
+		validate: [ validator.isEmail, 'L\'adresse email n\'est pas valide' ],
+		default: "test@test.ch"
 	},
 	
 	evenement_id: {

@@ -8,32 +8,27 @@ const scoreSchema = new Schema({
 	business:{
 		type: Number, 
 		required: false,
-		default: 0
+		default: 2
 	},
-	management:{
+	gestion:{
 		type: Number, 
 		required: false,
-		default: 0
+		default: 2
 	},
 	marketing:{
 		type: Number, 
 		required: false,
-		default: 0
-	},
-	coding:{
-		type: Number, 
-		required: false,
-		default: 0
-	},
-	multimedia:{
-		type: Number, 
-		required: false,
-		default: 0
+		default: 2
 	},
 	communication:{
 		type: Number, 
 		required: false,
-		default: 0
+		default: 2
+	},
+	technique:{
+		type: Number, 
+		required: false,
+		default: 2
 	},
 	joueur_id:{
 		type: Schema.Types.ObjectId,

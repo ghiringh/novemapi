@@ -1,69 +1,91 @@
 {"evenements": {
 		"_model": "Evenement",
 		"evenement1": {
-			"nom": "Journée à l'ERACOM",
-			"date_debut": "2017-05-04T09:20:00.000+02:00",
-			"date_fin": "2017-05-04T18:00:00.000+02:00",
+			"nom": "Portes Ouvertes HEIG-VD 2018",
+			"date_debut": "2018-03-09T08:00:00.000+02:00",
+			"date_fin": "2018-03-09T23:59:00.000+02:00",
 			"details":{
 				"ojectifs": "Recruter de nouveaux étudiants, faire connaître l'ingénierie des médias",
-				"description": "Journée transmédia 2017 à l'ERACOM",
-				"remarques": "Il s'agit ici des données obtenues au travers de l'application novem-lab.ch",
-				"public": "Etudiants en communication, en art et en technique"
+				"description": "Journée des portes ouvertes 2018 à la HEIG-VD",
+				"remarques": "Il s'agit ici des données obtenues au travers de l'application novemLab",
+				"public": "Etudiants en communication, en art et en technique, gymnasiens, matu pro, 18-25 ans"
 			}
 		}
 	},
 	"etapes": {
 		"_model": "Etape",
+		"welcome": {
+			"niveau":0,
+			"question": "Bonjour ! Je m'appelle Novem. Je suis une intelligence artificielle qui a pour but de rechercher de nouveaux superhéros en ingénierie des médias ! Tout d'abord, comment vous appelez vous ?",
+			"propositions":{}
+		},
 		"etape1": {
 			"niveau":1,
-			"question": "Vous voilà dans la salle des équipements. A vous de choisir 3 outils parmi la sélection proposée qui pourront, potentiellement, vous être utiles durant les diverses étapes de cette aventure.",
-			"propositions": [
-				{"reponse" : "Ordinateur", "score" : {"business":0 ,"coding": 2, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 2}},
-				{"reponse" : "Caméra", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 4}},
-				{"reponse" : "Plan marketing", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 4,"multimedia": 0}},
-				{"reponse" : "Calculatrice", "score" : {"business":4 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}},
-				{"reponse" : "Debugger", "score" : {"business":0 ,"coding": 4, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}},
-				{"reponse" : "Imprimante", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 4}},
-				{"reponse" : "Ecran pub", "score" : {"business":0 ,"coding": 0, "communication" : 1, "management" : 0,"marketing" : 3,"multimedia": 0}},
-				{"reponse" : "Assistant administratif", "score" : {"business":2 ,"coding": 0, "communication" : 2, "management" : 0,"marketing" : 0,"multimedia": 0}},
-				{"reponse" : "ERP", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 4,"marketing" : 0,"multimedia": 0}}
+			"question": "Bienvenue dans la salle d'équipment ! Voici quelques objets que j'apprécie beaucoup. Comme je vous aime bien aussi, je vous en offre trois !","propositions": [
+				{"reponse" : "Un Appareil photo", "score" : {"business":0 ,"gestion": 0, "communication" : 3, "marketing" : 2,"technique" : 1}},
+				{"reponse" : "Un Mégaphone", "score" : {"business":0 ,"gestion": 1, "communication" : 2, "marketing" : 3,"technique" : 0}},
+				{"reponse" : "Un Calendrier de l'avent", "score" : {"business":2 ,"gestion": 3, "communication" : 1, "marketing" : 0,"technique" : 0}},
+				{"reponse" : "Une Crousille", "score" : {"business":3 ,"gestion": 2, "communication" : 0, "marketing" : 1,"technique" : 0}},
+				{"reponse" : "Une Calculatrice TI-83 premium", "score" : {"business":2 ,"gestion": 1, "communication" : 0, "marketing" : 0,"technique" : 3}},
+				{"reponse" : "Un Poster de film géant", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 3,"technique" : 0}},
+				{"reponse" : "Une boite de Légo", "score" : {"business":1 ,"gestion": 2, "communication" : 0, "marketing" : 0,"technique" : 3}},
+				{"reponse" : "Un set de peinture à l'huile", "score" : {"business":0 ,"gestion": 0, "communication" : 3, "marketing" : 2,"technique" : 1}},
+				{"reponse" : "Une horloge vintage", "score" : {"business":0 ,"gestion": 3, "communication" : 2, "marketing" : 0,"technique" : 1}}
 			]
 		},
 		"etape2": {
 			"niveau":2,
-			"question": "A votre avis, quel bout de code permet d’afficher le message suivant : “BRAVO, vous êtes admis au NovemLab”",
+			"question": "Excellent choix ! Passons aux épreuves ; D'après vous, quels sont les quatre niveaux de l'écoute ? ",
 			"propositions": [
-				{"reponse" : "var etapesReussies = 3; if (etapesReussies < 3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}},
-				{"reponse" : "var etapesReussies = 3; if (etapesReussies != 4) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : {"business":0 ,"coding": 2, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}},
-				{"reponse":"var etapesReussies = 3; if (etapesReussies > 3) {console.log(“BRAVO, vous êtes admis au NovemLab”)}", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}
+				{"reponse" :
+				["Passive",
+					"Active",
+					"Hyper-active",
+					"Générative"], "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
+				{"reponse" :
+				["Passive",
+					"Factuelle",
+					"Empathique",
+					"Générative"], "score" : {"business":0 ,"gestion": 1, "communication" : 2, "marketing" : 0,"technique" : 0}},
+				{"reponse":
+				["Passive",
+					"Active",
+					"Factuelle",
+					"Empathique"], "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}}
 			]
 		},
 		"etape3": {
 			"niveau":3,
-			"question": " Maintenant vous allez visionner une vidéo, le principe est simple… à la fin de cette séquence il faut choisir le bon type de plan",
+			"question": " Mmmh... Intéressant... Bien ! Question suivante ! À votre avis, lesquels de ces languages de programmation n'existe pas ?",
 			"propositions": [
-				{"reponse" : "Plan américain", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}},
-				{"reponse" : "Plan taille", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 2}},
-				{"reponse" : "Plan italien", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}
+				{"reponse" : "Plan américain", "score" : {"business":0 ,"gestion": 2, "communication" : 0, "marketing" : 0,"technique" : 0}},
+				{"reponse" : "Plan taille", "score" : {"business":0 ,"gestion": 2, "communication" : 0, "marketing" : 0,"technique" : 0}},
+				{"reponse" : "Plan italien", "score" : {"business":0 ,"gestion": 2, "communication" : 0, "marketing" : 0,"technique" : 0}}
 			]
 		},
 		"etape4": {
 			"niveau":4,
 			"question": "Il est temps de faire un peu de mathématiques … Quel type de fonction correspond à ce graphique ?",
 			"propositions":[
-				{"reponse" : "Une fonction exponentielle", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}},
-				{"reponse" : "Une fonction  logarithmique", "score" : {"business":0 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}},
-				{"reponse" : "Une fonction second degré", "score" : {"business":2 ,"coding": 0, "communication" : 0, "management" : 0,"marketing" : 0,"multimedia": 0}}
+				{"reponse" : "Python", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
+				{"reponse" : "Javascript", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : -1}},
+				{"reponse" : "SQL", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
+				{"reponse" : "HTML", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : -1}},
+				{"reponse" : "C-harp", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 2}},
+				{"reponse" : "PHP", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : -1}},
+				{"reponse" : "Ruby", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
+				{"reponse" : "PERL", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
+				{"reponse" : "Diamant", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 2}}
 			]
 		},
 		"etape5": {
 			"niveau":5,
 			"question": "Vous êtes chef de la startup NovemUp, comme première décision, vous devez classer par ordre d’importance les tâches suivantes",
 			"propositions": [
-				{"reponse" : "Gestion de projet", "competence" : "management"},
-				{"reponse" : "Design et maquetting", "competence" : "multimédia"},
+				{"reponse" : "Gestion de projet", "competence" : "gestion"},
+				{"reponse" : "Design et maquetting", "competence" : "communication"},
 				{"reponse" : "Étude de marché", "competence" : "business"},
-				{"reponse" : "Développement", "competence" : "code"},
+				{"reponse" : "Développement", "competence" : "technique"},
 				{"reponse" : "Plateforme de communication interne", "competence" : "communication"},
 				{"reponse" : "Promotion" ,"competence" : "marketing"}
 			]
@@ -72,8 +94,8 @@
 			"niveau":6,
 			"question": "Pour promouvoir au mieux notre projet, nous avons la possibilité de choisir 2 canaux de publicité parmi ces 4 possibilités. Faites votre choix et classez-les selon le degré d’impact.",
 			"propositions": [
-				{"reponse" : "Flyers", "competence" : "multimédia"},
-				{"reponse" : "Site web", "competence" : "coding"},
+				{"reponse" : "Flyers", "competence" : "communication"},
+				{"reponse" : "Site web", "competence" : "technique"},
 				{"reponse" : "Street marketing", "competence" : "marketing"},
 				{"reponse" : "Réseaux sociaux", "competence" : "communication"}
 			]
@@ -83,9 +105,9 @@
 			"question": "Finalement, il est temps de prendre une décision crutiale pour l'avenir de la startup. Vous avez la possibilité de choisir 3 décisions stratégiques parmi ces 6 possibilités. Faites votre choix et classez-les selon le degré d’importance.",
 			"propositions": [
 				{"reponse" : "R&D", "competence" : "business"},
-				{"reponse" : "Update du produit ou du service", "competence" : "code"},
-				{"reponse" : "Renforcement des éléments graphiques de l’application", "competence" : "multimedia"},
-				{"reponse" : "Accroître les ressources humaines", "competence" : "management"},
+				{"reponse" : "Update du produit ou du service", "competence" : "technique"},
+				{"reponse" : "Renforcement des éléments graphiques de l’application", "competence" : "communication"},
+				{"reponse" : "Accroître les ressources humaines", "competence" : "gestion"},
 				{"reponse" : "Investir dans d’autres produits", "competence" : "business"},
 				{"reponse" : "Promotion en continu", "competence" : "marketing"}]
 		}

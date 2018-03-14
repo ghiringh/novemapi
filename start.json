@@ -2,8 +2,8 @@
 		"_model": "Evenement",
 		"evenement1": {
 			"nom": "Portes Ouvertes HEIG-VD 2018",
-			"date_debut": "2018-03-09T08:00:00.000+02:00",
-			"date_fin": "2018-03-09T23:59:00.000+02:00",
+			"date_debut": "2018-03-16T08:00:00.000+02:00",
+			"date_fin": "2018-03-16T23:59:00.000+02:00",
 			"details":{
 				"ojectifs": "Recruter de nouveaux étudiants, faire connaître l'ingénierie des médias",
 				"description": "Journée des portes ouvertes 2018 à la HEIG-VD",
@@ -35,12 +35,12 @@
 		},
 		"etape2": {
 			"niveau":2,
-			"question": "Excellent choix ! Passons aux épreuves ; D'après vous, quels sont les quatre niveaux de l'écoute ? ",
+			"question": "Excellent choix ! Passons aux épreuves. D'après vous, quels sont les quatre niveaux de l'écoute ? ",
 			"propositions": [
 				{"reponse" :
 				["Passive",
 					"Active",
-					"Hyper-active",
+					"Hyperactive",
 					"Générative"], "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
 				{"reponse" :
 				["Passive",
@@ -57,15 +57,6 @@
 		"etape3": {
 			"niveau":3,
 			"question": " Mmmh... Intéressant... Bien ! Question suivante ! À votre avis, lesquels de ces languages de programmation n'existe pas ?",
-			"propositions": [
-				{"reponse" : "Plan américain", "score" : {"business":0 ,"gestion": 2, "communication" : 0, "marketing" : 0,"technique" : 0}},
-				{"reponse" : "Plan taille", "score" : {"business":0 ,"gestion": 2, "communication" : 0, "marketing" : 0,"technique" : 0}},
-				{"reponse" : "Plan italien", "score" : {"business":0 ,"gestion": 2, "communication" : 0, "marketing" : 0,"technique" : 0}}
-			]
-		},
-		"etape4": {
-			"niveau":4,
-			"question": "Il est temps de faire un peu de mathématiques … Quel type de fonction correspond à ce graphique ?",
 			"propositions":[
 				{"reponse" : "Python", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
 				{"reponse" : "Javascript", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : -1}},
@@ -78,38 +69,46 @@
 				{"reponse" : "Diamant", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 2}}
 			]
 		},
+		"etape4": {
+			"niveau":4,
+			"question": "Parlons Marketing digital. Que signifie l'acronyme anglais 'S.E.O' ?",
+			"propositions":[
+				{"reponse" : "Search Every Occurence (Recherche des occurences)", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
+				{"reponse" : "Social Enquiry Optimization (Optimisation d'enquête sociale)", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
+				{"reponse" : "Search Engine Optimization (Optimisation pour les moteurs de recherche)", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 2,"technique" : 1}},
+				{"reponse" : "Search Engine Opacity (Transparence des moteurs de recherche)", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}}
+			]
+		},
 		"etape5": {
 			"niveau":5,
-			"question": "Vous êtes chef de la startup NovemUp, comme première décision, vous devez classer par ordre d’importance les tâches suivantes",
-			"propositions": [
-				{"reponse" : "Gestion de projet", "competence" : "gestion"},
-				{"reponse" : "Design et maquetting", "competence" : "communication"},
-				{"reponse" : "Étude de marché", "competence" : "business"},
-				{"reponse" : "Développement", "competence" : "technique"},
-				{"reponse" : "Plateforme de communication interne", "competence" : "communication"},
-				{"reponse" : "Promotion" ,"competence" : "marketing"}
+			"question": "J'adore les acronymes ! En voilà un autre ; Que signifie R.O.I. ?",
+			"propositions":[
+				{"reponse" : "Real Overall Investment (Investissement global réel)", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
+				{"reponse" : "Return On Investment (Retour sur investissement)", "score" : {"business":2 ,"gestion": 1, "communication" : 0, "marketing" : 0,"technique" : 0}},
+				{"reponse" : "Realistic Optimal Investment (Investisesement réaliste optimal)", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
+				{"reponse" : "C'est le dirigeant d'un Royaume", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}}
 			]
 		},
 		"etape6": {
 			"niveau":6,
-			"question": "Pour promouvoir au mieux notre projet, nous avons la possibilité de choisir 2 canaux de publicité parmi ces 4 possibilités. Faites votre choix et classez-les selon le degré d’impact.",
+			"question": "Prochain sujet : Gestion de projet. À votre avis, quelle méthode de gestion de projet est représentée par ce schéma ?",
 			"propositions": [
-				{"reponse" : "Flyers", "competence" : "communication"},
-				{"reponse" : "Site web", "competence" : "technique"},
-				{"reponse" : "Street marketing", "competence" : "marketing"},
-				{"reponse" : "Réseaux sociaux", "competence" : "communication"}
+				{"reponse" : "Waterfall", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
+				{"reponse" : "SCRUM (AGILE)", "score" : {"business":1 ,"gestion": 2, "communication" : 0, "marketing" : 0,"technique" : 0}},
+				{"reponse" : "PERT", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" :0 ,"technique" : 0}},
+				{"reponse" : "Loop management", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}}
 			]
 		},
 		"etape7": {
 			"niveau":7,
-			"question": "Finalement, il est temps de prendre une décision crutiale pour l'avenir de la startup. Vous avez la possibilité de choisir 3 décisions stratégiques parmi ces 6 possibilités. Faites votre choix et classez-les selon le degré d’importance.",
+			"question": "Imaginez que vous avez commencé à travailler en indépendant il y a quelques années et vous pensez maintenant à vous agrandir. Triez, selon vous, les éléments suivants par ordre d'importance. Il n'y a pas de mauvaise réponse !",
 			"propositions": [
-				{"reponse" : "R&D", "competence" : "business"},
-				{"reponse" : "Update du produit ou du service", "competence" : "technique"},
-				{"reponse" : "Renforcement des éléments graphiques de l’application", "competence" : "communication"},
-				{"reponse" : "Accroître les ressources humaines", "competence" : "gestion"},
-				{"reponse" : "Investir dans d’autres produits", "competence" : "business"},
-				{"reponse" : "Promotion en continu", "competence" : "marketing"}]
+				{"reponse" : "Flyers", "competence" : "communication"},
+				{"reponse" : "Site web", "competence" : "technique"},
+				{"reponse" : "Street marketing", "competence" : "marketing"},
+				{"reponse" : "Réseaux sociaux", "competence" : "business"},
+				{"reponse" : "Réseaux sociaux", "competence" : "gestion"}
+			]
 		}
 	}
 }

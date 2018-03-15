@@ -16,12 +16,12 @@
 		"_model": "Etape",
 		"welcome": {
 			"niveau":0,
-			"question": "Bonjour ! Je m'appelle Novem. Je suis une intelligence artificielle qui a pour but de rechercher de nouveaux superhéros en ingénierie des médias ! Tout d'abord, comment vous appelez vous ?",
+			"question": "Bonjour ! Je m'appelle Novem. Je suis une intelligence artificielle qui a pour but de rechercher de nouveaux superhéros en ingénierie des médias ! Si vous voulez connaître votre profil de superhero, entrez votre nom et commencez les épreuves !",
 			"propositions":{}
 		},
 		"etape1": {
 			"niveau":1,
-			"question": "Bienvenue dans la salle d'équipment ! Voici quelques objets que j'apprécie beaucoup. Ils ne vous seront pas utiles par la suite mais mon algorithme de générosité me dit de vous en offrir trois !","propositions": [
+			"question": "Bienvenue dans la salle d'équipment ! Voici quelques objets que j'apprécie beaucoup. Ils ne vous seront pas utiles par la suite mais mon algorithme de générosité me dit de vous en offrir trois ! Qu'est-ce qui vous ferait plaisir ?","propositions": [
 				{"reponse" : "Un Appareil photo", "score" : {"business":0 ,"gestion": 0, "communication" : 3, "marketing" : 2,"technique" : 1}},
 				{"reponse" : "Un Mégaphone", "score" : {"business":0 ,"gestion": 1, "communication" : 2, "marketing" : 3,"technique" : 0}},
 				{"reponse" : "Un Calendrier de l'avent", "score" : {"business":2 ,"gestion": 3, "communication" : 1, "marketing" : 0,"technique" : 0}},
@@ -35,7 +35,7 @@
 		},
 		"etape2": {
 			"niveau":2,
-			"question": "Excellent choix ! Passons aux épreuves. D'après vous, quels sont les quatre niveaux de l'écoute ? ",
+			"question": "Excellent choix ! Passons à quelques questions. D'après vous, quels sont les quatre niveaux de l'écoute ? ",
 			"propositions": [
 				{"reponse" :
 				["Passive",
@@ -56,7 +56,7 @@
 		},
 		"etape3": {
 			"niveau":3,
-			"question": " Mmmh... Intéressant... Bien ! Question suivante ! À votre avis, lesquels de ces languages de programmation n'existe pas ?",
+			"question": " Mmmh... Intéressant... Question suivante ! À votre avis, lesquels de ces languages de programmation n'existe pas ?",
 			"propositions":[
 				{"reponse" : "Python", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
 				{"reponse" : "Javascript", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : -1}},
@@ -91,7 +91,7 @@
 		},
 		"etape6": {
 			"niveau":6,
-			"question": "Prochain sujet : Gestion de projet. À votre avis, quelle méthode de gestion de projet est représentée par ce schéma ?",
+			"question": "Prochain sujet : La gestion de projet. À votre avis, quelle méthode de gestion de projet est représentée par ce schéma ?",
 			"propositions": [
 				{"reponse" : "Waterfall", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
 				{"reponse" : "SCRUM (AGILE)", "score" : {"business":1 ,"gestion": 2, "communication" : 0, "marketing" : 0,"technique" : 0}},
@@ -102,13 +102,23 @@
 		"etape7": {
 			"niveau":7,
 			"question": "Dernière question. Imaginez que vous travaillez en indépendant et vous pensez maintenant à vous agrandir. Vous dressez une liste de tâches dont voici 5 éléments. Triez-les selon votre degré de motivation à les effectuer. Il n'y a pas de mauvaise réponse !",
-			"propositions": [
+			"propositions": [ 
 				{"reponse" : "Créer des visuels pour l'entreprise", "competence" : "communication"},
 				{"reponse" : "Mettre en place un outil de gestion de clients (CRM)", "competence" : "technique"},
 				{"reponse" : "Optimiser le référencement de votre site internet", "competence" : "marketing"},
 				{"reponse" : "Trouver de nouveaux locaux et du nouveau mobilier", "competence" : "business"},
 				{"reponse" : "Recruter un-e assistant-e et un-e développeur-euse web", "competence" : "gestion"}
 			]
+		},
+		"etape8": {
+			"niveau":8,
+			"question": "C'est terminé, bravo ! Je suis impatient de vous donner vos résultats ! Cependant, j'ai été programmé pour vous demander quelque chose en retour. Entrez votre adresse e-mail pour accédez à votre profil !",
+			"propositions":{}
+		},
+		"etape9": {
+			"niveau":9,
+			"question": "Voilà votre profil de superhéro ! L'ingénierie des médias regroupe trois axes: Management (Business et Gestion), Communication (Communication et Marketing) et Technique. Si vous êtes intéressés à en savoir plus, n'hésitez pas à poser des questions à mes assista.. à mes créateurs sur le stand !",
+			"propositions":{}
 		}
 	}
 }

@@ -21,7 +21,7 @@
 		},
 		"etape1": {
 			"niveau":1,
-			"question": "Bienvenue dans la salle d'équipment ! Voici quelques objets que j'apprécie beaucoup. Comme je vous aime bien aussi, je vous en offre trois !","propositions": [
+			"question": "Bienvenue dans la salle d'équipment ! Voici quelques objets que j'apprécie beaucoup. Ils ne vous seront pas utiles par la suite mais mon algorithme de générosité me dit de vous en offrir trois !","propositions": [
 				{"reponse" : "Un Appareil photo", "score" : {"business":0 ,"gestion": 0, "communication" : 3, "marketing" : 2,"technique" : 1}},
 				{"reponse" : "Un Mégaphone", "score" : {"business":0 ,"gestion": 1, "communication" : 2, "marketing" : 3,"technique" : 0}},
 				{"reponse" : "Un Calendrier de l'avent", "score" : {"business":2 ,"gestion": 3, "communication" : 1, "marketing" : 0,"technique" : 0}},
@@ -101,13 +101,13 @@
 		},
 		"etape7": {
 			"niveau":7,
-			"question": "Imaginez que vous avez commencé à travailler en indépendant il y a quelques années et vous pensez maintenant à vous agrandir. Triez, selon vous, les éléments suivants par ordre d'importance. Il n'y a pas de mauvaise réponse !",
+			"question": "Vous travaillez en indépendant et vous pensez maintenant à vous agrandir. Vous dressez une liste de tâches dont voici 5 éléments. Triez-les selon votre degré de motivation à les effectuer. Il n'y a pas de mauvaise réponse !",
 			"propositions": [
-				{"reponse" : "Flyers", "competence" : "communication"},
-				{"reponse" : "Site web", "competence" : "technique"},
-				{"reponse" : "Street marketing", "competence" : "marketing"},
-				{"reponse" : "Réseaux sociaux", "competence" : "business"},
-				{"reponse" : "Réseaux sociaux", "competence" : "gestion"}
+				{"reponse" : "Créer des visuels pour l'entreprise", "competence" : "communication"},
+				{"reponse" : "Mettre en place un outil de gestion de clients (CRM)", "competence" : "technique"},
+				{"reponse" : "Optimiser le référencement de votre site internet", "competence" : "marketing"},
+				{"reponse" : "Trouver de nouveaux locaux et du nouveau mobilier", "competence" : "business"},
+				{"reponse" : "Recruter un-e assistant-e et un-e développeur-euse web", "competence" : "gestion"}
 			]
 		}
 	}

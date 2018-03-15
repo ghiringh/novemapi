@@ -18,7 +18,7 @@ const evenementSchema = new Schema({
 	date_debut:{
 		type: Date,
 		required: true,
-		validate: dateDebut
+		//validate: dateDebut
 	},
 	date_fin:{
 		type: Date,

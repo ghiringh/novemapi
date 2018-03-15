@@ -81,7 +81,7 @@
 		},
 		"etape5": {
 			"niveau":5,
-			"question": "J'adore les acronymes ! En voilà un autre ; Que signifie R.O.I. ?",
+			"question": "J'adore les acronymes ! En voilà un autre. Que signifie R.O.I. ?",
 			"propositions":[
 				{"reponse" : "Real Overall Investment (Investissement global réel)", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
 				{"reponse" : "Return On Investment (Retour sur investissement)", "score" : {"business":2 ,"gestion": 1, "communication" : 0, "marketing" : 0,"technique" : 0}},
@@ -101,7 +101,7 @@
 		},
 		"etape7": {
 			"niveau":7,
-			"question": "Vous travaillez en indépendant et vous pensez maintenant à vous agrandir. Vous dressez une liste de tâches dont voici 5 éléments. Triez-les selon votre degré de motivation à les effectuer. Il n'y a pas de mauvaise réponse !",
+			"question": "Dernière question. Imaginez que vous travaillez en indépendant et vous pensez maintenant à vous agrandir. Vous dressez une liste de tâches dont voici 5 éléments. Triez-les selon votre degré de motivation à les effectuer. Il n'y a pas de mauvaise réponse !",
 			"propositions": [
 				{"reponse" : "Créer des visuels pour l'entreprise", "competence" : "communication"},
 				{"reponse" : "Mettre en place un outil de gestion de clients (CRM)", "competence" : "technique"},

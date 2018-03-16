@@ -2,7 +2,7 @@
 		"_model": "Evenement",
 		"evenement1": {
 			"nom": "Portes Ouvertes HEIG-VD 2018",
-			"date_debut": "2018-03-14T08:00:00.000+02:00",
+			"date_debut": "2018-03-16T08:00:00.000+02:00",
 			"date_fin": "2018-03-16T23:59:00.000+02:00",
 			"details":{
 				"ojectifs": "Recruter de nouveaux étudiants, faire connaître l'ingénierie des médias",

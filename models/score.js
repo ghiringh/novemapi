@@ -15,7 +15,7 @@ const scoreSchema = new Schema({
 		required: false,
 		default: 2
 	},
-	marketing:{
+	management:{
 		type: Number, 
 		required: false,
 		default: 2
@@ -26,6 +26,11 @@ const scoreSchema = new Schema({
 		default: 2
 	},
 	technique:{
+		type: Number, 
+		required: false,
+		default: 2
+	},
+	conception:{
 		type: Number, 
 		required: false,
 		default: 2

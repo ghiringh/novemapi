@@ -43,14 +43,17 @@ router.patch('/phase1/:id', loadScore, function(req, res, next) {
 	if (req.body.gestion !== undefined) {
 		req.score.gestion += req.body.gestion;
 	}
-	if (req.body.marketing !== undefined) {
-		req.score.marketing += req.body.marketing;
+	if (req.body.management !== undefined) {
+		req.score.management += req.body.management;
 	}
 	if (req.body.technique !== undefined) {
 		req.score.technique += req.body.technique;
 	}
 	if (req.body.communication !== undefined) {
 		req.score.communication += req.body.communication;
+	}
+	if (req.body.conception !== undefined) {
+		req.score.conception += req.body.conception;
 	}
 
 	req.score.save(function(err, savedScore) {
@@ -70,14 +73,17 @@ router.patch('/phase2/:id', loadScore, function(req, res, next) {
 	if (req.body.gestion !== undefined) {
 		req.score.gestion += 1.5 * req.body.gestion;
 	}
-	if (req.body.marketing !== undefined) {
-		req.score.marketing += 1.5 * req.body.marketing;
+	if (req.body.management !== undefined) {
+		req.score.management += 1.5 * req.body.management;
 	}
 	if (req.body.technique !== undefined) {
 		req.score.technique += 1.5 * req.body.technique;
 	}
 	if (req.body.communication !== undefined) {
 		req.score.communication += 1.5 * req.body.communication;
+	}
+	if (req.body.conception !== undefined) {
+		req.score.conception += 1.5 * req.body.conception;
 	}
 
 	req.score.save(function(err, savedScore) {

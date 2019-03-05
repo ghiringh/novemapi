@@ -1,14 +1,14 @@
 {"evenements": {
 		"_model": "Evenement",
 		"evenement1": {
-			"nom": "Portes Ouvertes HEIG-VD 2018",
-			"date_debut": "2018-03-16T08:00:00.000+02:00",
-			"date_fin": "2018-03-16T23:59:00.000+02:00",
+			"nom": "Tests Dév",
+			"date_debut": "2019-02-16T06:00:00.000+02:00",
+			"date_fin": "2019-02-28T23:59:00.000+02:00",
 			"details":{
 				"ojectifs": "Recruter de nouveaux étudiants, faire connaître l'ingénierie des médias",
-				"description": "Journée des portes ouvertes 2018 à la HEIG-VD",
-				"remarques": "Il s'agit ici des données obtenues au travers de l'application novemLab",
-				"public": "Etudiants en communication, en art et en technique, gymnasiens, matu pro, 18-25 ans"
+				"description": "Journée des portes ouvertes 2019 à la HEIG-VD",
+				"remarques": "Il s'agit ici des données obtenues au travers de l'application",
+				"public": "Étudiant·e·s en communication, en art et en technique, gymnasiens, matu pro, 18-25 ans"
 			}
 		}
 	},
@@ -16,98 +16,72 @@
 		"_model": "Etape",
 		"welcome": {
 			"niveau":0,
-			"question": "Bonjour ! Je m'appelle Novem. Je suis une intelligence artificielle qui a pour but de rechercher de nouveaux superhéros en ingénierie des médias ! Si vous voulez connaître votre profil de superhero, entrez votre nom et commencez les épreuves !",
+			"question": "Bonjour ! Je m'appelle Novem. Je suis une intelligence artificielle qui a pour but de recherche de nouveaux ingénieur-e des médias ! Entrez votre prénom et commencez les épreuves pour connaitre votre profil !",
 			"propositions":{}
 		},
 		"etape1": { 
 			"niveau":1,
-			"question": "Bienvenue dans la salle d'équipment ! Voici quelques objets que j'apprécie beaucoup. Ils ne vous seront pas utiles par la suite mais mon algorithme de générosité me dit de vous en offrir trois ! Qu'est-ce qui vous ferait plaisir ?","propositions": [
-				{"reponse" : "Un Appareil photo", "score" : {"business":0 ,"gestion": 0, "communication" : 3, "marketing" : 2,"technique" : 1}},
-				{"reponse" : "Un Mégaphone", "score" : {"business":0 ,"gestion": 1, "communication" : 2, "marketing" : 3,"technique" : 0}},
-				{"reponse" : "Un Calendrier de l'avent", "score" : {"business":2 ,"gestion": 3, "communication" : 1, "marketing" : 0,"technique" : 0}},
-				{"reponse" : "Une Crousille", "score" : {"business":3 ,"gestion": 2, "communication" : 0, "marketing" : 1,"technique" : 0}},
-				{"reponse" : "Une Calculatrice TI-83 premium", "score" : {"business":2 ,"gestion": 1, "communication" : 0, "marketing" : 0,"technique" : 3}},
-				{"reponse" : "Un Poster de film géant", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 3,"technique" : 0}},
-				{"reponse" : "Une boite de Légo", "score" : {"business":1 ,"gestion": 2, "communication" : 0, "marketing" : 0,"technique" : 3}},
-				{"reponse" : "Un set de peinture à l'huile", "score" : {"business":0 ,"gestion": 0, "communication" : 3, "marketing" : 2,"technique" : 1}},
-				{"reponse" : "Une horloge vintage", "score" : {"business":0 ,"gestion": 3, "communication" : 2, "marketing" : 0,"technique" : 1}}
+			"question": "Imaginez votre premier jour de travail dans l’entreprise dont vous avez toujours rêvé. À votre arrivée, deux outils de travail vous attendent sur votre bureau. Lesquels préféreriez-vous y trouver ?","propositions": [
+				{"reponse" : "Une caméra professionnelle", "score" : {"business":0 ,"gestion": 0, "communication" : 2, "management" : 2,"technique" : 1, "conception" : 1}},
+				{"reponse" : "Un smartphone d'entreprise", "score" : {"business":2 ,"gestion": 2, "communication" : 1, "management" : 0,"technique" : 0, "conception" : 0}},
+				{"reponse" : "Une smartwatch", "score" : {"business":3 ,"gestion": 2, "communication" : 0, "management" : 1,"technique" : 0, "conception" : 0}},
+				{"reponse" : "Un super-ordinateur de calcul", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 1,"technique" : 2, "conception" : 1}},
+				{"reponse" : "Les accès à la plateforme de gestion de projets", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 3,"technique" : 0, "conception" : 0}},
+				{"reponse" : "Une tablette de dessin", "score" : {"business":1 ,"gestion": 2, "communication" : 0, "management" : 1,"technique" : 1, "conception" :2}}
 			]
 		},
 		"etape2": {
 			"niveau":2,
-			"question": "Excellent choix ! Passons à quelques questions. D'après vous, quels sont les quatre niveaux de l'écoute ? ",
+			"question": "Très bien. Le jour suivant, votre chef est sur le point de vous confier votre première mission. Laquelle vous motiverait le plus ?",
 			"propositions": [
-				{"reponse" :
-				["Passive",
-					"Active",
-					"Hyperactive",
-					"Générative"], "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
-				{"reponse" :
-				["Passive",
-					"Factuelle",
-					"Empathique",
-					"Générative"], "score" : {"business":0 ,"gestion": 1, "communication" : 2, "marketing" : 0,"technique" : 0}},
-				{"reponse":
-				["Passive",
-					"Active",
-					"Factuelle",
-					"Empathique"], "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}}
+				{"reponse" : "Créer une maquette visuelle d’une application mobile que l’entreprise aimerait développer", "score" : {"business":0 ,"gestion": 0, "communication" : 1, "management" : 0,"technique" : 0, "conception" : 2}},
+				{"reponse" : "Analyser différentes offres de projet, établir leurs budgets, et choisir les plus intéressantes à vos yeux", "score" : {"business":2 ,"gestion": 1, "communication" : 0, "management" : 0,"technique" : 0, "conception" : 0}},
+				{"reponse" : "Créer les visuels (photos et vidéos) pour la campagne Facebook en cours", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 2,"technique" : 0, "conception" : 1}},
+				{"reponse" : "Développer une nouvelle fonctionnalité pour l’intranet de l’entreprise", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 0,"technique" : 2, "conception" : 1}},
+				{"reponse" : "Trouver un bon outil de gestion pour les réseaux sociaux", "score" : {"business":1 ,"gestion": 0, "communication" : 2, "management" : 0,"technique" : 1, "conception" : 0}},
+				{"reponse" : "Faire des recherches sur une entreprise de vente de luxe qui vous a mandaté pour promouvoir un nouveau produit", "score" : {"business":0 ,"gestion": 2, "communication" : 0, "management" : 1,"technique" : 0, "conception" : 0}}
 			]
 		},
 		"etape3": {
 			"niveau":3,
-			"question": " Mmmh... Intéressant... Question suivante ! À votre avis, lesquels de ces languages de programmation n'existe pas ?",
+			"question": "Bien ! La semaine d'après, un responsable de projet vient vous voir et veut vous intégrer dans son équipe. Il vous propose quatre activités. Triez ces activités selon vos préférences",
 			"propositions":[
-				{"reponse" : "Python", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
-				{"reponse" : "Javascript", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : -1}},
-				{"reponse" : "SQL", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
-				{"reponse" : "HTML", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : -1}},
-				{"reponse" : "C-harp", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 2}},
-				{"reponse" : "PHP", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : -1}},
-				{"reponse" : "Ruby", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
-				{"reponse" : "PERL", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
-				{"reponse" : "Diamant", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 2}}
+				{"reponse" : "Un rendez-vous avec le client aura lieu la semaine suivante. Il pense que ça pourrait être bénéfique que vous l’accompagniez pour discuter du projet", "score" : {"business":1 ,"gestion": 1, "communication" : 0, "management" : 0,"technique" : 0, "conception" : 0}},
+				{"reponse" : "Il vous propose d’aider un collègue qui est en train d’établir l’identité visuelle de la campagne", "score" : {"business":0 ,"gestion": 0, "communication" : 1, "management" : 1,"technique" : 0, "conception" : 1}},
+				{"reponse" : "Le site web est bientôt prêt à être déployé, mais il faut effectuer des tests et corriger les bugs avec l’équipe de développement", "score" : {"business":0 ,"gestion": 1, "communication" : 0, "management" : 0,"technique" : 1, "conception" : 0}},
+				{"reponse" : "L’équipe en charge d’analyser les résultats de la campagne a besoin d’aide, il vous propose de découvrir les outils de monitoring qu’ils utilisent.", "score" : {"business":0 ,"gestion": 0, "communication" : 1, "management" : 0,"technique" : 1, "conception" : 0}}
 			]
 		},
 		"etape4": {
 			"niveau":4,
-			"question": "Parlons Marketing digital. Que signifie l'acronyme anglais 'S.E.O' ?",
+			"question": "Faisons un saut dans le temps : Après deux années d'expérience, le chef du département vous confie la mission d'organiser une journée de \"team building\". Vous faites des recherches et vous choisissez une des activités suivante",
 			"propositions":[
-				{"reponse" : "Search Every Occurence (Recherche des occurences)", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
-				{"reponse" : "Social Enquiry Optimization (Optimisation d'enquête sociale)", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
-				{"reponse" : "Search Engine Optimization (Optimisation pour les moteurs de recherche)", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 2,"technique" : 1}},
-				{"reponse" : "Search Engine Opacity (Transparence des moteurs de recherche)", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}}
+				{"reponse" : "Un jeu de piste en extérieur, imaginé et mis en place par vos soins", "score" : {"business":1 ,"gestion": 0, "communication" : 0, "management" : 1,"technique" : 0, "conception" : 1}},
+				{"reponse" : "Une escape room où l'équipe doit déjouer les plans d'un pirate informatique", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 1,"technique" : 1, "conception" : 0}},
+				{"reponse" : "Un atelier créatif pour améliorer l'esprit d'équipe et la communication", "score" : {"business":0 ,"gestion": 1, "communication" : 1, "management" : 2,"technique" : 1, "conception" : 1}},
+				{"reponse" : "Un atelier sur l'écoute et la prise de parole en public", "score" : {"business":1 ,"gestion": 1, "communication" : 0, "management" : 0,"technique" : 0, "conception" : 0}}
 			]
 		},
 		"etape5": {
 			"niveau":5,
-			"question": "J'adore les acronymes ! En voilà un autre. Que signifie R.O.I. ?",
+			"question": "Quelques années plus tard, vous aimeriez changer d'entreprise pour intégrer une petite start-up dynamique de 5 à 10 employés. Vous trouvez quatre annonces. Quel poste vous intéresse le plus ?",
 			"propositions":[
-				{"reponse" : "Real Overall Investment (Investissement global réel)", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
-				{"reponse" : "Return On Investment (Retour sur investissement)", "score" : {"business":2 ,"gestion": 1, "communication" : 0, "marketing" : 0,"technique" : 0}},
-				{"reponse" : "Realistic Optimal Investment (Investisesement réaliste optimal)", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
-				{"reponse" : "C'est le dirigeant d'un Royaume", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}}
-			]
-		},
-		"etape6": {
-			"niveau":6,
-			"question": "Prochain sujet : La gestion de projet. À votre avis, quelle méthode de gestion de projet est représentée par ce schéma ?",
-			"propositions": [
-				{"reponse" : "Waterfall", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}},
-				{"reponse" : "SCRUM (AGILE)", "score" : {"business":1 ,"gestion": 2, "communication" : 0, "marketing" : 0,"technique" : 0}},
-				{"reponse" : "PERT", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" :0 ,"technique" : 0}},
-				{"reponse" : "Loop management", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "marketing" : 0,"technique" : 0}}
+				{"reponse" : {"titre":"Spécialiste UX/UI","description":"Vous serez en charge de créer et d'optimiser des interfaces d'applications web et mobiles pour offrir la meilleure expérience possible aux utilisateurs"}, "score" : {"business":0 ,"gestion": 0, "communication" : 1, "management" : 0,"technique" : 0, "conception" : 2}},
+				{"reponse" : {"titre":"Digital Project Manager","description":"De la conception à la réalisation, vous devrez gérer, organiser et mener à bien différents projets digitaux."}, "score" : {"business":1 ,"gestion": 2, "communication" : 0, "management" : 0,"technique" : 0, "conception" : 0}},
+				{"reponse" : {"titre":"Social Media Manager","description":"Aux commandes de l'écosystème digital de l'entreprise et de ses réseaux sociaux, vous devrez analyser et piloter la stratégie digitale de l'entreprise"}, "score" : {"business":0 ,"gestion": 0, "communication" : 2, "management" : 1,"technique" : 0, "conception" : 0}},
+				{"reponse" : {"titre":"Développeur web & mobile","description":"Au sein d'une équipe de développement, vous serez amené à conceptualiser et développer des outils et service web et mobile en utilisant les technologies adaptées"}, "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 0,"technique" : 2, "conception" : 1}}
 			]
 		},
 		"etape7": {
 			"niveau":7,
-			"question": "Dernière question. Imaginez que vous travaillez en indépendant et vous pensez maintenant à vous agrandir. Vous dressez une liste de tâches dont voici 5 éléments. Triez-les selon votre degré de motivation à les effectuer. Il n'y a pas de mauvaise réponse !",
+			"question": "Finalement, vous avez décidé de vous lancer dans votre propre aventure entrepreneuriale. Vous dressez une liste de tâches dont voici 5 éléments. Triez-les selon votre degré de motivation à les effectuer (haut: motivant - bas: ennuyeux).",
 			"propositions": [ 
-				{"reponse" : "Créer des visuels pour l'entreprise", "competence" : "communication"},
-				{"reponse" : "Mettre en place un outil de gestion de clients (CRM)", "competence" : "technique"},
-				{"reponse" : "Optimiser le référencement de votre site internet", "competence" : "marketing"},
-				{"reponse" : "Trouver de nouveaux locaux et du nouveau mobilier", "competence" : "business"},
-				{"reponse" : "Recruter un-e assistant-e et un-e développeur-euse web", "competence" : "gestion"}
+				{"reponse" : "Créer l'identité visuelle de l'entreprise", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 1,"technique" : 0, "conception" : 0}},
+				{"reponse" : "Mettre en place un outil de gestion de clients (CRM)", "score" : {"business":1 ,"gestion": 0, "communication" : 0, "management" : 0,"technique" : 0, "conception" : 0}},
+				{"reponse" : "Chercher le mobilier et les éléments de décoration du bureau", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 0,"technique" : 0, "conception" : 1}},
+				{"reponse" : "Définir les valeurs et les principes que vous voulez véhiculer à travers votre entreprise", "score" : {"business":0 ,"gestion": 0, "communication" : 1, "management" : 0,"technique" : 0, "conception" : 0}},
+				{"reponse" : "Développer le site internet et ses fonctionnalités", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 0,"technique" : 1, "conception" : 0}},
+				{"reponse" : "Publier une annonce de recrutement et participer à des entretiens d'embauche", "score" : {"business":0 ,"gestion": 1, "communication" : 0, "management" : 0,"technique" : 0, "conception" : 0}}
 			]
 		},
 		"etape8": {

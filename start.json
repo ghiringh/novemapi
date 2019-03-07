@@ -3,7 +3,7 @@
 		"evenement1": {
 			"nom": "Tests Dév",
 			"date_debut": "2019-02-16T06:00:00.000+02:00",
-			"date_fin": "2019-02-28T23:59:00.000+02:00",
+			"date_fin": "2019-03-28T23:59:00.000+02:00",
 			"details":{
 				"ojectifs": "Recruter de nouveaux étudiants, faire connaître l'ingénierie des médias",
 				"description": "Journée des portes ouvertes 2019 à la HEIG-VD",
@@ -44,7 +44,7 @@
 		},
 		"etape3": {
 			"niveau":3,
-			"question": "Bien ! La semaine d'après, un responsable de projet vient vous voir et veut vous intégrer dans son équipe. Il vous propose quatre activités. Triez ces activités selon vos préférences",
+			"question": "Bien ! La semaine d'après, le responsable du projet de campagne publicitaire web pour un client prestigieux vient vous voir et veut vous intégrer dans son équipe. Il vous propose quatre activités. Triez ces activités selon vos préférences.",
 			"propositions":[
 				{"reponse" : "Un rendez-vous avec le client aura lieu la semaine suivante. Il pense que ça pourrait être bénéfique que vous l’accompagniez pour discuter du projet", "score" : {"business":1 ,"gestion": 1, "communication" : 0, "management" : 0,"technique" : 0, "conception" : 0}},
 				{"reponse" : "Il vous propose d’aider un collègue qui est en train d’établir l’identité visuelle de la campagne", "score" : {"business":0 ,"gestion": 0, "communication" : 1, "management" : 1,"technique" : 0, "conception" : 1}},
@@ -54,7 +54,7 @@
 		},
 		"etape4": {
 			"niveau":4,
-			"question": "Faisons un saut dans le temps : Après deux années d'expérience, le chef du département vous confie la mission d'organiser une journée de \"team building\". Vous faites des recherches et vous choisissez une des activités suivante",
+			"question": "Faisons un saut dans le temps : Après deux années d'expérience, le chef du département vous confie la mission d'organiser une journée de \"team building\". Vous faites des recherches et vous choisissez une des activités suivante.",
 			"propositions":[
 				{"reponse" : "Un jeu de piste en extérieur, imaginé et mis en place par vos soins", "score" : {"business":1 ,"gestion": 0, "communication" : 0, "management" : 1,"technique" : 0, "conception" : 1}},
 				{"reponse" : "Une escape room où l'équipe doit déjouer les plans d'un pirate informatique", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 1,"technique" : 1, "conception" : 0}},
@@ -86,7 +86,7 @@
 		},
 		"etape8": {
 			"niveau":8,
-			"question": "C'est terminé, bravo ! Je suis impatient de vous donner vos résultats ! Cependant, j'ai été programmé pour vous demander quelque chose en retour. Entrez votre adresse e-mail pour accédez à votre profil !",
+			"question": "",
 			"propositions":{}
 		},
 		"etape9": {

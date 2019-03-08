@@ -44,11 +44,11 @@
 		},
 		"etape3": {
 			"niveau":3,
-			"question": "Bien ! La semaine d'après, le responsable du projet de campagne publicitaire web pour un client prestigieux vient vous voir et veut vous intégrer dans son équipe. Il vous propose quatre activités. Triez ces activités selon vos préférences.",
+			"question": "Bien ! La semaine d'après, le responsable d'un projet de campagne publicitaire pour un client prestigieux vient vous voir et veut vous intégrer dans son équipe. Il vous propose quatre activités. Triez ces activités selon vos préférences.",
 			"propositions":[
 				{"reponse" : "Un rendez-vous avec le client aura lieu la semaine suivante. Il pense que ça pourrait être bénéfique que vous l’accompagniez pour discuter du projet", "score" : {"business":1 ,"gestion": 1, "communication" : 0, "management" : 0,"technique" : 0, "conception" : 0}},
-				{"reponse" : "Il vous propose d’aider un collègue qui est en train d’établir l’identité visuelle de la campagne", "score" : {"business":0 ,"gestion": 0, "communication" : 1, "management" : 1,"technique" : 0, "conception" : 1}},
-				{"reponse" : "Le site web est bientôt prêt à être déployé, mais il faut effectuer des tests et corriger les bugs avec l’équipe de développement", "score" : {"business":0 ,"gestion": 1, "communication" : 0, "management" : 0,"technique" : 1, "conception" : 0}},
+				{"reponse" : "Il vous propose d’aider un collègue qui est en train de finaliser l’identité visuelle de la campagne", "score" : {"business":0 ,"gestion": 0, "communication" : 1, "management" : 1,"technique" : 0, "conception" : 1}},
+				{"reponse" : "Le site web de campagne est bientôt prêt à être déployé, mais il faut effectuer des tests et corriger les bugs avec l’équipe de développement", "score" : {"business":0 ,"gestion": 1, "communication" : 0, "management" : 0,"technique" : 1, "conception" : 0}},
 				{"reponse" : "L’équipe en charge d’analyser les résultats de la campagne a besoin d’aide, il vous propose de découvrir les outils de monitoring qu’ils utilisent.", "score" : {"business":0 ,"gestion": 0, "communication" : 1, "management" : 0,"technique" : 1, "conception" : 0}}
 			]
 		},
@@ -74,7 +74,7 @@
 		},
 		"etape7": {
 			"niveau":7,
-			"question": "Finalement, vous avez décidé de vous lancer dans votre propre aventure entrepreneuriale. Vous dressez une liste de tâches dont voici 5 éléments. Triez-les selon votre degré de motivation à les effectuer (haut: motivant - bas: ennuyeux).",
+			"question": "Finalement, vous avez décidé de vous lancer dans votre propre aventure entrepreneuriale. Vous dressez une liste de tâches dont voici 6 éléments. Triez-les selon votre degré de motivation à les effectuer (haut: motivant - bas: ennuyeux).",
 			"propositions": [ 
 				{"reponse" : "Créer l'identité visuelle de l'entreprise", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 1,"technique" : 0, "conception" : 0}},
 				{"reponse" : "Mettre en place un outil de gestion de clients (CRM)", "score" : {"business":1 ,"gestion": 0, "communication" : 0, "management" : 0,"technique" : 0, "conception" : 0}},
@@ -86,12 +86,12 @@
 		},
 		"etape8": {
 			"niveau":8,
-			"question": "",
+			"question": "C'est terminé ! Nous pouvons maintenant créer une approximation de votre profil d'ingénieur·e des médias. Avant cela, aimeriez-vous recevoir des informations complémentaires sur la formation par e-mail ?",
 			"propositions":{}
 		},
 		"etape9": {
 			"niveau":9,
-			"question": "Voilà votre profil de superhéro ! L'ingénierie des médias regroupe trois axes: Management (Business et Gestion), Communication (Communication et Marketing) et Technique. Si vous êtes intéressés à en savoir plus, n'hésitez pas à poser des questions à mes assista.. à mes créateurs sur le stand !",
+			"question": "Voilà votre profil de compétences en ingénierie des médias !",
 			"propositions":{}
 		}
 	}

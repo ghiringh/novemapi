@@ -34,12 +34,12 @@
 			"niveau":2,
 			"question": "Très bien. Le jour suivant, votre chef est sur le point de vous confier votre première mission. Laquelle vous motiverait le plus ?",
 			"propositions": [
-				{"reponse" : "Créer une maquette visuelle d’une application mobile que l’entreprise aimerait développer", "score" : {"business":0 ,"gestion": 0, "communication" : 1, "management" : 0,"technique" : 0, "conception" : 2}},
+				{"reponse" : "Créer la maquette visuelle d’une application mobile que l’entreprise doit développer", "score" : {"business":0 ,"gestion": 0, "communication" : 1, "management" : 0,"technique" : 0, "conception" : 2}},
 				{"reponse" : "Analyser différentes offres de projet, établir leurs budgets, et choisir les plus intéressantes à vos yeux", "score" : {"business":2 ,"gestion": 1, "communication" : 0, "management" : 0,"technique" : 0, "conception" : 0}},
-				{"reponse" : "Créer les visuels (photos et vidéos) pour la campagne Facebook en cours", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 2,"technique" : 0, "conception" : 1}},
-				{"reponse" : "Développer une nouvelle fonctionnalité pour l’intranet de l’entreprise", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 0,"technique" : 2, "conception" : 1}},
+				{"reponse" : "Créer les visuels (photos et vidéos) pour une campagne Facebook en cours", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 2,"technique" : 0, "conception" : 1}},
+				{"reponse" : "Développer une nouvelle fonctionnalité pour le site internet de l’entreprise", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 0,"technique" : 2, "conception" : 1}},
 				{"reponse" : "Trouver un bon outil de gestion pour les réseaux sociaux", "score" : {"business":1 ,"gestion": 0, "communication" : 2, "management" : 0,"technique" : 1, "conception" : 0}},
-				{"reponse" : "Faire des recherches sur une entreprise de vente de luxe qui vous a mandaté pour promouvoir un nouveau produit", "score" : {"business":0 ,"gestion": 2, "communication" : 0, "management" : 1,"technique" : 0, "conception" : 0}}
+				{"reponse" : "Faire des recherches sur une entreprise de vente en ligne de luxe pour qui il faut promouvoir un nouveau produit", "score" : {"business":0 ,"gestion": 2, "communication" : 0, "management" : 1,"technique" : 0, "conception" : 0}}
 			]
 		},
 		"etape3": {
@@ -74,7 +74,7 @@
 		},
 		"etape7": {
 			"niveau":7,
-			"question": "Finalement, vous avez décidé de vous lancer dans votre propre aventure entrepreneuriale. Vous dressez une liste de tâches dont voici 6 éléments. Triez-les selon votre degré de motivation à les effectuer (haut: motivant - bas: ennuyeux).",
+			"question": "Finalement, vous avez décidé de vous lancer dans votre propre aventure entrepreneuriale. Vous dressez une liste de tâches dont voici 6 éléments. Triez-les selon votre degré de motivation à les effectuer.",
 			"propositions": [ 
 				{"reponse" : "Créer l'identité visuelle de l'entreprise", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 1,"technique" : 0, "conception" : 0}},
 				{"reponse" : "Mettre en place un outil de gestion de clients (CRM)", "score" : {"business":1 ,"gestion": 0, "communication" : 0, "management" : 0,"technique" : 0, "conception" : 0}},
@@ -86,7 +86,7 @@
 		},
 		"etape8": {
 			"niveau":8,
-			"question": "C'est terminé ! Nous pouvons maintenant créer une approximation de votre profil d'ingénieur·e des médias. Avant cela, aimeriez-vous recevoir des informations complémentaires sur la formation par e-mail ?",
+			"question": "C'est terminé ! Nous pouvons maintenant définir votre profil d'ingénieur·e des médias. Avant cela, aimeriez-vous recevoir des informations complémentaires sur la formation BSc en ingénierie des médias par e-mail ?",
 			"propositions":{}
 		},
 		"etape9": {

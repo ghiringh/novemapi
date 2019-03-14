@@ -2,8 +2,8 @@
 		"_model": "Evenement",
 		"evenement1": {
 			"nom": "Tests Dév",
-			"date_debut": "2019-02-16T06:00:00.000+02:00",
-			"date_fin": "2019-03-28T23:59:00.000+02:00",
+			"date_debut": "2019-03-14T06:00:00.000+02:00",
+			"date_fin": "2019-03-15T23:59:00.000+02:00",
 			"details":{
 				"ojectifs": "Recruter de nouveaux étudiants, faire connaître l'ingénierie des médias",
 				"description": "Journée des portes ouvertes 2019 à la HEIG-VD",

@@ -74,7 +74,7 @@
 		},
 		"etape7": {
 			"niveau":7,
-			"question": "Finalement, vous avez décidé de vous lancer dans votre propre aventure entrepreneuriale. Vous dressez une liste de tâches dont voici 6 éléments. Lesquels êtes-vous impatient·e d'effectuer ? Triez-les de la plus motivante à la moins motivante",
+			"question": "Finalement, vous avez décidé de vous lancer dans votre propre aventure entrepreneuriale. Vous dressez une liste de tâches dont voici 6 éléments. Lesquelles êtes-vous impatient·e d'effectuer ? Triez-les de la plus motivante à la moins motivante",
 			"propositions": [ 
 				{"reponse" : "Créer l'identité visuelle de l'entreprise", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 1,"technique" : 0, "conception" : 0}},
 				{"reponse" : "Mettre en place un outil de gestion de clients (CRM)", "score" : {"business":1 ,"gestion": 0, "communication" : 0, "management" : 0,"technique" : 0, "conception" : 0}},

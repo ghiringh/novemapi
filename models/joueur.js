@@ -26,6 +26,11 @@ const joueurSchema = new Schema({
 		maxlength: [ 20, 'Le nom est trop long' ]
 	},
 
+	profileImg:{
+		type:[String],
+		required:false
+	},
+
 	email: {
 		type: String,
 		required: false,

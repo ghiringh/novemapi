@@ -1,14 +1,14 @@
 {"evenements": {
 		"_model": "Evenement",
 		"evenement1": {
-			"nom": "Tests Dév",
+			"nom": "Portes ouvertes 2019",
 			"date_debut": "2019-03-14T06:00:00.000+02:00",
 			"date_fin": "2019-03-15T23:59:00.000+02:00",
 			"details":{
 				"ojectifs": "Recruter de nouveaux étudiants, faire connaître l'ingénierie des médias",
 				"description": "Journée des portes ouvertes 2019 à la HEIG-VD",
 				"remarques": "Il s'agit ici des données obtenues au travers de l'application",
-				"public": "Étudiant·e·s en communication, en art et en technique, gymnasiens, matu pro, 18-25 ans"
+				"public": "Étudiant·e·s en communication, en art et en technique, gymnasiens, matu pro, matu spécialisée, 16-25 ans"
 			}
 		}
 	},
@@ -74,7 +74,7 @@
 		},
 		"etape7": {
 			"niveau":7,
-			"question": "Finalement, vous avez décidé de vous lancer dans votre propre aventure entrepreneuriale. Vous dressez une liste de tâches dont voici 6 éléments. Triez-les selon votre degré de motivation à les effectuer.",
+			"question": "Finalement, vous avez décidé de vous lancer dans votre propre aventure entrepreneuriale. Vous dressez une liste de tâches dont voici 6 éléments. Lesquels êtes-vous impatient·e d'effectuer ? Triez-les de la plus motivante à la moins motivante",
 			"propositions": [ 
 				{"reponse" : "Créer l'identité visuelle de l'entreprise", "score" : {"business":0 ,"gestion": 0, "communication" : 0, "management" : 1,"technique" : 0, "conception" : 0}},
 				{"reponse" : "Mettre en place un outil de gestion de clients (CRM)", "score" : {"business":1 ,"gestion": 0, "communication" : 0, "management" : 0,"technique" : 0, "conception" : 0}},

@@ -62,6 +62,9 @@ router.patch('/:id', loadJoueur, function(req, res, next) {
 	if (req.body.nom !== undefined) {
 		req.joueur.nom = req.body.nom;
 	}
+	if(req.body.profileImg !== undefined){
+		req.joueur.profileImg = req.body.profileImg;
+	}
 	if (req.body.email !== undefined) {
 		req.joueur.email = req.body.email;
 	}
